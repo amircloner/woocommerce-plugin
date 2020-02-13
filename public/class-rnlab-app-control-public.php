@@ -253,7 +253,7 @@ class Rnlab_App_Control_Public {
 		if ( $type == "register" ) {
 			if ( count( $users ) > 0 ) {
 				$error = new WP_Error();
-				$error->add( 403, "Your phone number already exist in database!", array( 'status' => 400 ) );
+				$error->add( 403, "شماره تماس شما قبلاً در سایت ثبت شده است.", array( 'status' => 400 ) );
 
 				return $error;
 			}
@@ -264,7 +264,7 @@ class Rnlab_App_Control_Public {
 		// Login folow
 		if ( count( $users ) == 0 ) {
 			$error = new WP_Error();
-			$error->add( 403, "Your phone number not exist in database!", array( 'status' => 400 ) );
+			$error->add( 403, "شماره تماس شما در سایت وجود ندارد!", array( 'status' => 400 ) );
 
 			return $error;
 		}
@@ -346,7 +346,7 @@ class Rnlab_App_Control_Public {
 
 		// Perform Pre Checks
 		if ( ! class_exists( 'WooCommerce' ) ) {
-			$error->add( 400, __( "Failed to process payment. WooCommerce either missing or deactivated.", 'rnlab-rest-payment' ), array( 'status' => 400 ) );
+			$error->add( 400, __( "پرداخت ناموفق!", 'rnlab-rest-payment' ), array( 'status' => 400 ) );
 
 			return $error;
 		}
@@ -404,16 +404,16 @@ class Rnlab_App_Control_Public {
 				$payment_result = $gateway->process_payment( $order_id );
 				if ( $payment_result['result'] === "success" ) {
 					$response['code']    = 200;
-					$response['message'] = __( "Payment Successful.", "rnlab-rest-payment" );
+					$response['message'] = __( "پرداخت موفق.", "rnlab-rest-payment" );
 					$response['data']    = $payment_result;
 
 					// Return Successful Response
 					return new WP_REST_Response( $response, 200 );
 				} else {
-					return new WP_Error( 500, 'Payment Failed, Check WooCommerce Status Log for further information.', $payment_result );
+					return new WP_Error( 500, 'پرداخت ناموفق', $payment_result );
 				}
 			} else {
-				return new WP_Error( 408, 'Payment Failed, Pre Process Failed.', $parameters['pre_process_result'] );
+				return new WP_Error( 408, 'پرداخت ناموفق', $parameters['pre_process_result'] );
 			}
 
 		}
@@ -434,11 +434,11 @@ class Rnlab_App_Control_Public {
 
 		if ( $payment_result['result'] === "success" ) {
 			$response['code']     = 200;
-			$response['message']  = __( "Your Payment was Successful", "rnlab-rest-payment" );
+			$response['message']  = __( "پرداخت شما موفقیت آمیز بوده است", "rnlab-rest-payment" );
 			$response['redirect'] = $payment_result['redirect'];
 		} else {
 			$response['code']    = 401;
-			$response['message'] = __( "Please enter valid card details", "rnlab-rest-payment" );
+			$response['message'] = __( "لطفاً اطلاعات کارت بانکی را وارد کنید", "rnlab-rest-payment" );
 		}
 
 		return new WP_REST_Response( $response );
@@ -485,7 +485,7 @@ class Rnlab_App_Control_Public {
 
 		if ( $payment_result['result'] === "success" ) {
 			$response['code']    = 200;
-			$response['message'] = __( "Your Payment was Successful", "rnlab-rest-payment" );
+			$response['message'] = __( "پرداخت شما موفقیت آمیز بوده است", "rnlab-rest-payment" );
 
 			// $order = wc_get_order( $order_id );
 
@@ -496,7 +496,7 @@ class Rnlab_App_Control_Public {
 
 		} else {
 			$response['code']    = 401;
-			$response['message'] = __( "Please enter valid card details", "rnlab-rest-payment" );
+			$response['message'] = __( "لطفاً اطلاعات کارت بانکی را وارد کنید", "rnlab-rest-payment" );
 		}
 
 		return new WP_REST_Response( $response );
@@ -656,12 +656,12 @@ class Rnlab_App_Control_Public {
 		$user_login = $request->get_param( 'user_login' );
 
 		if ( empty( $user_login ) || ! is_string( $user_login ) ) {
-			$errors->add( 'empty_username', __( '<strong>ERROR</strong>: Enter a username or email address.' ) );
+			$errors->add( 'empty_username', __( '<strong>خطا</strong>: نام کاربری یا آدرس ایمیل خود را وارد کنید.' ) );
 		} elseif ( strpos( $user_login, '@' ) ) {
 			$user_data = get_user_by( 'email', trim( wp_unslash( $user_login ) ) );
 			if ( empty( $user_data ) ) {
 				$errors->add( 'invalid_email',
-					__( '<strong>ERROR</strong>: There is no account with that username or email address.' ) );
+					__( '<strong>خطا</strong>: با نام کاربری یا آدرس ایمیل شما هیچ حسابی کاربری ای وجود ندارد.' ) );
 			}
 		} else {
 			$login     = trim( $user_login );
@@ -674,7 +674,7 @@ class Rnlab_App_Control_Public {
 
 		if ( ! $user_data ) {
 			$errors->add( 'invalidcombo',
-				__( '<strong>ERROR</strong>: There is no account with that username or email address.' ) );
+				__( '<strong>خطا</strong>: با نام کاربری یا آدرس ایمیل شما هیچ حسابی کاربری ای وجود ندارد.' ) );
 
 			return $errors;
 		}
@@ -698,13 +698,13 @@ class Rnlab_App_Control_Public {
 			$site_name = wp_specialchars_decode( get_option( 'blogname' ), ENT_QUOTES );
 		}
 
-		$message = __( 'Someone has requested a password reset for the following account:' ) . "\r\n\r\n";
+		$message = __( 'شخصی درخواست بازنشانی گذرواژه برای حساب کاربری شما کرده است.' ) . "\r\n\r\n";
 		/* translators: %s: site name */
 		$message .= sprintf( __( 'Site Name: %s' ), $site_name ) . "\r\n\r\n";
 		/* translators: %s: user login */
 		$message .= sprintf( __( 'Username: %s' ), $user_login ) . "\r\n\r\n";
-		$message .= __( 'If this was a mistake, just ignore this email and nothing will happen.' ) . "\r\n\r\n";
-		$message .= __( 'To reset your password, visit the following address:' ) . "\r\n\r\n";
+		$message .= __( 'اگر شما این درخواست را نداده اید ، این ایمیل را نادیده بگیرید و هیچ اتفاقی نخواهد افتاد.' ) . "\r\n\r\n";
+		$message .= __( 'برای بازنشانی گذرواژه خود ، به آدرس زیر مراجعه کنید:' ) . "\r\n\r\n";
 		$message .= '<' . network_site_url( "wp-login.php?action=rp&key=$key&login=" . rawurlencode( $user_login ),
 				'login' ) . ">\r\n";
 
@@ -1282,7 +1282,7 @@ class Rnlab_App_Control_Public {
 
 		if ( count( $users ) == 0 ) {
 			$error = new WP_Error();
-			$error->add( 403, "Did not find any members matching the phone number!", array( 'status' => 400 ) );
+			$error->add( 403, "هیچ کاربری مطابق با شماره تماس شما یافت نشد!", array( 'status' => 400 ) );
 
 			return $error;
 		}
