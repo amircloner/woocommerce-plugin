@@ -1,0 +1,14 @@
+{
+    "name": "rnlab/wp-app-control",
+    "description": "libs",
+    "authors": [
+        {
+            "name": "Ngoc Dang",
+            "email": "ngocdt@rnlab.io"
+        }
+    ],
+    "require": {
+        "firebase/php-jwt": "^5.0",
+        "facebook/graph-sdk": "^5.7"
+    }
+}
