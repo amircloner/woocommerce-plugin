@@ -18,7 +18,7 @@
  *
  * @package    Generace_App_Control
  * @subpackage Generace_App_Control/product
- * @author     GENERACE <ngocdt@rnlab.io>
+ * @author     GENERACE <info@generace.ir>
  */
 class Generace_App_Control_Product {
 

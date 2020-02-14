@@ -55815,8 +55815,8 @@
                         href: "https://support.rnlab.io/",
                         rel: "nofollow"
                     }, "https://support.rnlab.io/")), a.a.createElement("li", null, "Email Support: ", a.a.createElement("a", {
-                        href: "mailto:ngocdt@rnlab.io"
-                    }, "ngocdt@rnlab.io"))))
+                        href: "mailto:info@generace.ir"
+                    }, "info@generace.ir"))))
                 }
             }]), t
         }(o.Component);

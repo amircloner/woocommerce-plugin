@@ -18,7 +18,7 @@
  * @since      1.0.0
  * @package    Generace_App_Control
  * @subpackage Generace_App_Control/includes
- * @author     GENERACE <ngocdt@rnlab.io>
+ * @author     GENERACE <info@generace.ir>
  */
 class Generace_App_Control_Deactivator {
 

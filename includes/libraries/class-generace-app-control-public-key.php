@@ -4,7 +4,7 @@ use Firebase\JWT\JWT;
 
 /**
  * Class Generace_App_Control_Public_Key
- * @author ngocdt@rnlab.io
+ * @author info@generace.ir
  * @since 1.2.3
  */
 class Generace_App_Control_Public_Key {
