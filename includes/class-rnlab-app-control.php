@@ -68,7 +68,7 @@ class Rnlab_App_Control {
 	 */
 	public function __construct() {
 		$this->version = RNLAB_APP_CONTROL_VERSION;
-		$this->plugin_name = 'rnlab-app-control';
+		$this->plugin_name = 'generace-app-control';
 
 		$this->load_dependencies();
 		$this->set_locale();
@@ -105,44 +105,44 @@ class Rnlab_App_Control {
 		 * The class responsible for orchestrating the actions and filters of the
 		 * core plugin.
 		 */
-		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/class-rnlab-app-control-loader.php';
+		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/class-generace-app-control-loader.php';
 
 		/**
 		 * The class responsible for defining internationalization functionality
 		 * of the plugin.
 		 */
-		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/class-rnlab-app-control-i18n.php';
+		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/class-generace-app-control-i18n.php';
 
 		/**
 		 * The class responsible for loading payment gateways
 		 * @author Ngoc Dang
 		 * @since 1.1.0
 		 */
-		require_once plugin_dir_path(dirname(__FILE__)) . 'includes/gateways/class-rnlab-app-control-gateway-paypal.php';
-		require_once plugin_dir_path(dirname(__FILE__)) . 'includes/gateways/class-rnlab-app-control-gateway-razorpay.php';
+		require_once plugin_dir_path(dirname(__FILE__)) . 'includes/gateways/class-generace-app-control-gateway-paypal.php';
+		require_once plugin_dir_path(dirname(__FILE__)) . 'includes/gateways/class-generace-app-control-gateway-razorpay.php';
 
 		/**
 		 * The class responsible for defining all actions that occur in the admin area.
 		 */
-		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'admin/class-rnlab-app-control-admin.php';
+		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'admin/class-generace-app-control-admin.php';
 
 		/**
 		 * The class responsible for defining all actions that occur in the public-facing
 		 * side of the site.
 		 */
-		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'public/class-rnlab-app-control-public.php';
+		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'public/class-generace-app-control-public.php';
 
 		/**
 		 * The class responsible for defining all actions that occur in the product-facing
 		 * side of the site.
 		 */
-		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'product/class-rnlab-app-control-product.php';
+		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'product/class-generace-app-control-product.php';
 
 		/**
 		 * Load library
 		 * @since 1.2.3
 		 */
-		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/libraries/class-rnlab-app-control-public-key.php';
+		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/libraries/class-generace-app-control-public-key.php';
 
 		$this->loader = new Rnlab_App_Control_Loader();
 

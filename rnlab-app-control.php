@@ -10,18 +10,18 @@
  *
  * @link              https://generace.ir
  * @since             1.0.0
- * @package           Rnlab_App_Control
+ * @package           Generace_App_Control
  *
  * @wordpress-plugin
- * Plugin Name:       Rnlap - App Control
+ * Plugin Name:       GENERACE - App Control
  * Plugin URI:        https://doc-oreo.rnlab.io/docs/v1/rnlab-app-control
  * Description:       Add hooks, api routers, auth and app config.
  * Version:           1.3.0
- * Author:            RNLAB
+ * Author:            GENERACE
  * Author URI:        https://generace.ir
  * License:           GPL-2.0+
  * License URI:       http://www.gnu.org/licenses/gpl-2.0.txt
- * Text Domain:       rnlab-app-control
+ * Text Domain:       generace-app-control
  * Domain Path:       /languages
  */
 
@@ -39,19 +39,19 @@ define( 'RNLAB_APP_CONTROL_VERSION', '1.3.0' );
 
 /**
  * The code that runs during plugin activation.
- * This action is documented in includes/class-rnlab-app-control-activator.php
+ * This action is documented in includes/class-generace-app-control-activator.php
  */
 function activate_rnlab_app_control() {
-	require_once plugin_dir_path( __FILE__ ) . 'includes/class-rnlab-app-control-activator.php';
+	require_once plugin_dir_path( __FILE__ ) . 'includes/class-generace-app-control-activator.php';
 	Rnlab_App_Control_Activator::activate();
 }
 
 /**
  * The code that runs during plugin deactivation.
- * This action is documented in includes/class-rnlab-app-control-deactivator.php
+ * This action is documented in includes/class-generace-app-control-deactivator.php
  */
 function deactivate_rnlab_app_control() {
-	require_once plugin_dir_path( __FILE__ ) . 'includes/class-rnlab-app-control-deactivator.php';
+	require_once plugin_dir_path( __FILE__ ) . 'includes/class-generace-app-control-deactivator.php';
 	Rnlab_App_Control_Deactivator::deactivate();
 }
 
@@ -62,7 +62,7 @@ register_deactivation_hook( __FILE__, 'deactivate_rnlab_app_control' );
  * The core plugin class that is used to define internationalization,
  * admin-specific hooks, and public-facing site hooks.
  */
-require plugin_dir_path( __FILE__ ) . 'includes/class-rnlab-app-control.php';
+require plugin_dir_path( __FILE__ ) . 'includes/class-generace-app-control.php';
 
 /**
  * Begins execution of the plugin.

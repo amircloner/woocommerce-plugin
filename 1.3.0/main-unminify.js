@@ -42117,22 +42117,22 @@
             }]), t
         }(o.Component),
         Fm = function() {
-            return ba.get("/rnlab-app-control/v1/template-mobile")
+            return ba.get("/generace-app-control/v1/template-mobile")
         },
         Um = function(e) {
-            return ba.put("/rnlab-app-control/v1/template-mobile", e)
+            return ba.put("/generace-app-control/v1/template-mobile", e)
         },
         Qm = function(e) {
-            return ba.post("/rnlab-app-control/v1/template-mobile", e)
+            return ba.post("/generace-app-control/v1/template-mobile", e)
         },
         Wm = function(e) {
-            return ba.delete("/rnlab-app-control/v1/template-mobile", e)
+            return ba.delete("/generace-app-control/v1/template-mobile", e)
         },
         Km = function(e) {
-            return ba.get("/rnlab-app-control/v1/configs", e)
+            return ba.get("/generace-app-control/v1/configs", e)
         },
         Ym = function(e) {
-            return ba.post("/rnlab-app-control/v1/configs", e)
+            return ba.post("/generace-app-control/v1/configs", e)
         },
         qm = function(e) {
             function t(e, n) {
@@ -55870,7 +55870,7 @@
                     return u.a.wrap((function(e) {
                         for (;;) switch (e.prev = e.next) {
                             case 0:
-                                return t = r.props.dispatch, e.prev = 1, e.next = 4, ba.get("/rnlab-app-control/v1/settings");
+                                return t = r.props.dispatch, e.prev = 1, e.next = 4, ba.get("/generace-app-control/v1/settings");
                             case 4:
                                 return n = e.sent, e.next = 7, ba.get("/wc/v3/products/categories?parent=0&order=desc");
                             case 7:
@@ -55879,7 +55879,7 @@
                                     payload: bz({}, n, {
                                         categories: o
                                     })
-                                }), e.next = 11, ba.get("/rnlab-app-control/v1/template-mobile");
+                                }), e.next = 11, ba.get("/generace-app-control/v1/template-mobile");
                             case 11:
                                 a = e.sent, t({
                                     type: sm,

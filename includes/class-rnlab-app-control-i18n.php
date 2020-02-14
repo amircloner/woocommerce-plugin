@@ -35,7 +35,7 @@ class Rnlab_App_Control_i18n {
 	public function load_plugin_textdomain() {
 
 		load_plugin_textdomain(
-			'rnlab-app-control',
+			'generace-app-control',
 			false,
 			dirname( dirname( plugin_basename( __FILE__ ) ) ) . '/languages/'
 		);
