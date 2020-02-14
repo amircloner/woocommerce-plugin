@@ -67,7 +67,7 @@ class Generace_App_Control {
 	 * @since    1.0.0
 	 */
 	public function __construct() {
-		$this->version = RNLAB_APP_CONTROL_VERSION;
+		$this->version = GENERACE_APP_CONTROL_VERSION;
 		$this->plugin_name = 'generace-app-control';
 
 		$this->load_dependencies();
