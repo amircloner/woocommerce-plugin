@@ -8,7 +8,7 @@
  * registers the activation and deactivation functions, and defines a function
  * that starts the plugin.
  *
- * @link              https://rnlab.io
+ * @link              https://generace.ir
  * @since             1.0.0
  * @package           Rnlab_App_Control
  *
@@ -18,7 +18,7 @@
  * Description:       Add hooks, api routers, auth and app config.
  * Version:           1.3.0
  * Author:            RNLAB
- * Author URI:        https://rnlab.io
+ * Author URI:        https://generace.ir
  * License:           GPL-2.0+
  * License URI:       http://www.gnu.org/licenses/gpl-2.0.txt
  * Text Domain:       rnlab-app-control

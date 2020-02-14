@@ -19,7 +19,7 @@
  * For more information, see the following discussion:
  * https://github.com/tommcfarlin/WordPress-Plugin-Boilerplate/pull/123#issuecomment-28541913
  *
- * @link       https://rnlab.io
+ * @link       https://generace.ir
  * @since      1.0.0
  *
  * @package    Rnlab_App_Control

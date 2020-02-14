@@ -3,7 +3,7 @@
 /**
  * The admin-specific functionality of the plugin.
  *
- * @link       https://rnlab.io
+ * @link       https://generace.ir
  * @since      1.0.0
  *
  * @package    Rnlab_App_Control

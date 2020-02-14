@@ -5,7 +5,7 @@
  *
  * This file is used to markup the admin-facing aspects of the plugin.
  *
- * @link       https://rnlab.io
+ * @link       https://generace.ir
  * @since      1.0.0
  *
  * @package    Rnlab_App_Control
