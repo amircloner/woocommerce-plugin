@@ -9,8 +9,8 @@
  * @link       https://generace.ir
  * @since      1.0.0
  *
- * @package    Rnlab_App_Control
- * @subpackage Rnlab_App_Control/includes
+ * @package    Generace_App_Control
+ * @subpackage Generace_App_Control/includes
  */
 
 /**
@@ -23,11 +23,11 @@
  * version of the plugin.
  *
  * @since      1.0.0
- * @package    Rnlab_App_Control
- * @subpackage Rnlab_App_Control/includes
+ * @package    Generace_App_Control
+ * @subpackage Generace_App_Control/includes
  * @author     GENERACE <ngocdt@rnlab.io>
  */
-class Rnlab_App_Control {
+class Generace_App_Control {
 
 	/**
 	 * The loader that's responsible for maintaining and registering all hooks that power
@@ -35,7 +35,7 @@ class Rnlab_App_Control {
 	 *
 	 * @since    1.0.0
 	 * @access   protected
-	 * @var      Rnlab_App_Control_Loader    $loader    Maintains and registers all hooks for the plugin.
+	 * @var      Generace_App_Control_Loader    $loader    Maintains and registers all hooks for the plugin.
 	 */
 	protected $loader;
 
@@ -83,10 +83,10 @@ class Rnlab_App_Control {
 	 *
 	 * Include the following files that make up the plugin:
 	 *
-	 * - Rnlab_App_Control_Loader. Orchestrates the hooks of the plugin.
-	 * - Rnlab_App_Control_i18n. Defines internationalization functionality.
-	 * - Rnlab_App_Control_Admin. Defines all hooks for the admin area.
-	 * - Rnlab_App_Control_Public. Defines all hooks for the public side of the site.
+	 * - Generace_App_Control_Loader. Orchestrates the hooks of the plugin.
+	 * - Generace_App_Control_i18n. Defines internationalization functionality.
+	 * - Generace_App_Control_Admin. Defines all hooks for the admin area.
+	 * - Generace_App_Control_Public. Defines all hooks for the public side of the site.
 	 *
 	 * Create an instance of the loader which will be used to register the hooks
 	 * with WordPress.
@@ -144,14 +144,14 @@ class Rnlab_App_Control {
 		 */
 		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/libraries/class-generace-app-control-public-key.php';
 
-		$this->loader = new Rnlab_App_Control_Loader();
+		$this->loader = new Generace_App_Control_Loader();
 
 	}
 
 	/**
 	 * Define the locale for this plugin for internationalization.
 	 *
-	 * Uses the Rnlab_App_Control_i18n class in order to set the domain and to register the hook
+	 * Uses the Generace_App_Control_i18n class in order to set the domain and to register the hook
 	 * with WordPress.
 	 *
 	 * @since    1.0.0
@@ -159,7 +159,7 @@ class Rnlab_App_Control {
 	 */
 	private function set_locale() {
 
-		$plugin_i18n = new Rnlab_App_Control_i18n();
+		$plugin_i18n = new Generace_App_Control_i18n();
 
 		$this->loader->add_action( 'plugins_loaded', $plugin_i18n, 'load_plugin_textdomain' );
 
@@ -174,7 +174,7 @@ class Rnlab_App_Control {
 	 */
 	private function define_admin_hooks() {
 
-		$plugin_admin = new Rnlab_App_Control_Admin( $this->get_plugin_name(), $this->get_version() );
+		$plugin_admin = new Generace_App_Control_Admin( $this->get_plugin_name(), $this->get_version() );
 
 		$this->loader->add_action( 'rest_api_init', $plugin_admin, 'add_api_routes' );
 
@@ -195,16 +195,16 @@ class Rnlab_App_Control {
 	 */
 	private function define_public_hooks() {
 
-		$plugin_public = new Rnlab_App_Control_Public( $this->get_plugin_name(), $this->get_version() );
+		$plugin_public = new Generace_App_Control_Public( $this->get_plugin_name(), $this->get_version() );
 
 		$rnlab_gateways = array();
 		
 		// Payment Gateway via PayPal Standard
-		$gateway_paypal = new Rnlab_App_Control_Gateway_PayPal();
+		$gateway_paypal = new Generace_App_Control_Gateway_PayPal();
 		array_push($rnlab_gateways, $gateway_paypal);
 
 		// Payment Gateway via Razorpay Standard
-		$gateway_razorpay = new Rnlab_App_Control_Gateway_Razorpay();
+		$gateway_razorpay = new Generace_App_Control_Gateway_Razorpay();
 		array_push($rnlab_gateways, $gateway_razorpay);
 
 		// Register Payment Endpoint for all Gateways
@@ -243,7 +243,7 @@ class Rnlab_App_Control {
 	 */
 	private function define_product_hooks() {
 
-		$plugin_product = new Rnlab_App_Control_Product( $this->get_plugin_name(), $this->get_version() );
+		$plugin_product = new Generace_App_Control_Product( $this->get_plugin_name(), $this->get_version() );
 
 		$this->loader->add_action( 'rest_api_init', $plugin_product, 'add_api_routes' );
 
@@ -304,7 +304,7 @@ class Rnlab_App_Control {
 	 * The reference to the class that orchestrates the hooks with the plugin.
 	 *
 	 * @since     1.0.0
-	 * @return    Rnlab_App_Control_Loader    Orchestrates the hooks of the plugin.
+	 * @return    Generace_App_Control_Loader    Orchestrates the hooks of the plugin.
 	 */
 	public function get_loader() {
 		return $this->loader;

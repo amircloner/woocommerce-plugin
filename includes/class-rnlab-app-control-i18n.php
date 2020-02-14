@@ -9,8 +9,8 @@
  * @link       https://generace.ir
  * @since      1.0.0
  *
- * @package    Rnlab_App_Control
- * @subpackage Rnlab_App_Control/includes
+ * @package    Generace_App_Control
+ * @subpackage Generace_App_Control/includes
  */
 
 /**
@@ -20,11 +20,11 @@
  * so that it is ready for translation.
  *
  * @since      1.0.0
- * @package    Rnlab_App_Control
- * @subpackage Rnlab_App_Control/includes
+ * @package    Generace_App_Control
+ * @subpackage Generace_App_Control/includes
  * @author     GENERACE <ngocdt@rnlab.io>
  */
-class Rnlab_App_Control_i18n {
+class Generace_App_Control_i18n {
 
 
 	/**

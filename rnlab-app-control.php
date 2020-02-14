@@ -43,7 +43,7 @@ define( 'RNLAB_APP_CONTROL_VERSION', '1.3.0' );
  */
 function activate_rnlab_app_control() {
 	require_once plugin_dir_path( __FILE__ ) . 'includes/class-generace-app-control-activator.php';
-	Rnlab_App_Control_Activator::activate();
+	Generace_App_Control_Activator::activate();
 }
 
 /**
@@ -52,7 +52,7 @@ function activate_rnlab_app_control() {
  */
 function deactivate_rnlab_app_control() {
 	require_once plugin_dir_path( __FILE__ ) . 'includes/class-generace-app-control-deactivator.php';
-	Rnlab_App_Control_Deactivator::deactivate();
+	Generace_App_Control_Deactivator::deactivate();
 }
 
 register_activation_hook( __FILE__, 'activate_rnlab_app_control' );
@@ -75,7 +75,7 @@ require plugin_dir_path( __FILE__ ) . 'includes/class-generace-app-control.php';
  */
 function run_rnlab_app_control() {
 
-	$plugin = new Rnlab_App_Control();
+	$plugin = new Generace_App_Control();
 	$plugin->run();
 
 }

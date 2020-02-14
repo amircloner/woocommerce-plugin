@@ -6,12 +6,12 @@
  * @since      1.1.0
  *
  *
- * @package    Rnlab_App_Control
- * @subpackage Rnlab_App_Control/includes/gateways
+ * @package    Generace_App_Control
+ * @subpackage Generace_App_Control/includes/gateways
  * @author     Ngoc Dang
  */
 
-class Rnlab_App_Control_Gateway_Razorpay {
+class Generace_App_Control_Gateway_Razorpay {
 
 	/**
 	 * The ID of the corresponding WooCommerce Payment Gateway.

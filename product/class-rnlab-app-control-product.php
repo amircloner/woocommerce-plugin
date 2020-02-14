@@ -6,8 +6,8 @@
  * @link       https://generace.ir
  * @since      1.0.0
  *
- * @package    Rnlab_App_Control
- * @subpackage Rnlab_App_Control/product
+ * @package    Generace_App_Control
+ * @subpackage Generace_App_Control/product
  */
 
 /**
@@ -16,11 +16,11 @@
  * Defines the plugin name, version, and two examples hooks for how to
  * enqueue the product-facing stylesheet and JavaScript.
  *
- * @package    Rnlab_App_Control
- * @subpackage Rnlab_App_Control/product
+ * @package    Generace_App_Control
+ * @subpackage Generace_App_Control/product
  * @author     GENERACE <ngocdt@rnlab.io>
  */
-class Rnlab_App_Control_Product {
+class Generace_App_Control_Product {
 
 	/**
 	 * The ID of this plugin.

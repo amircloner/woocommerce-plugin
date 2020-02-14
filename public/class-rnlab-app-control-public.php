@@ -8,8 +8,8 @@ use \Firebase\JWT\JWT;
  * @link       https://generace.ir
  * @since      1.0.0
  *
- * @package    Rnlab_App_Control
- * @subpackage Rnlab_App_Control/public
+ * @package    Generace_App_Control
+ * @subpackage Generace_App_Control/public
  */
 
 /**
@@ -18,11 +18,11 @@ use \Firebase\JWT\JWT;
  * Defines the plugin name, version, and two examples hooks for how to
  * enqueue the public-facing stylesheet and JavaScript.
  *
- * @package    Rnlab_App_Control
- * @subpackage Rnlab_App_Control/public
+ * @package    Generace_App_Control
+ * @subpackage Generace_App_Control/public
  * @author     GENERACE <ngocdt@rnlab.io>
  */
-class Rnlab_App_Control_Public {
+class Generace_App_Control_Public {
 
 	/**
 	 * The ID of this plugin.
@@ -1045,7 +1045,7 @@ class Rnlab_App_Control_Public {
 			$identityToken = $request->get_param( 'identityToken' );
 			$userIdentity  = $request->get_param( 'user' );
 
-			$publicKeyDetails = Rnlab_App_Control_Public_Key::getPublicKey();
+			$publicKeyDetails = Generace_App_Control_Public_Key::getPublicKey();
 
 			$publicKey = $publicKeyDetails['publicKey'];
 			$alg       = $publicKeyDetails['alg'];

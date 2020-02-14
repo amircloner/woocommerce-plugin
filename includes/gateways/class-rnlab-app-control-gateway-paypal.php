@@ -7,12 +7,12 @@
  *
  * @link https://docs.woocommerce.com/document/paypal-standard/ PayPal Standard
  *
- * @package    Rnlab_App_Control
- * @subpackage Rnlab_App_Control/includes/gateways
+ * @package    Generace_App_Control
+ * @subpackage Generace_App_Control/includes/gateways
  * @author     Ngoc Dang
  */
 
-class Rnlab_App_Control_Gateway_PayPal {
+class Generace_App_Control_Gateway_PayPal {
 
 	/**
 	 * The ID of the corresponding WooCommerce Payment Gateway.

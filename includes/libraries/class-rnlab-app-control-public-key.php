@@ -3,11 +3,11 @@
 use Firebase\JWT\JWT;
 
 /**
- * Class Rnlab_App_Control_Public_Key
+ * Class Generace_App_Control_Public_Key
  * @author ngocdt@rnlab.io
  * @since 1.2.3
  */
-class Rnlab_App_Control_Public_Key {
+class Generace_App_Control_Public_Key {
 
 	public static function getPublicKey() {
 		$publicKeys        = file_get_contents( 'https://appleid.apple.com/auth/keys' );

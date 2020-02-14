@@ -22,7 +22,7 @@
  * @link       https://generace.ir
  * @since      1.0.0
  *
- * @package    Rnlab_App_Control
+ * @package    Generace_App_Control
  */
 
 // If uninstall not called from WordPress, then exit.

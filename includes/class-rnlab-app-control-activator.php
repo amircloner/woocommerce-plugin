@@ -6,8 +6,8 @@
  * @link       https://generace.ir
  * @since      1.0.0
  *
- * @package    Rnlab_App_Control
- * @subpackage Rnlab_App_Control/includes
+ * @package    Generace_App_Control
+ * @subpackage Generace_App_Control/includes
  */
 
 /**
@@ -16,11 +16,11 @@
  * This class defines all code necessary to run during the plugin's activation.
  *
  * @since      1.0.0
- * @package    Rnlab_App_Control
- * @subpackage Rnlab_App_Control/includes
+ * @package    Generace_App_Control
+ * @subpackage Generace_App_Control/includes
  * @author     GENERACE <ngocdt@rnlab.io>
  */
-class Rnlab_App_Control_Activator {
+class Generace_App_Control_Activator {
 
 	/**
 	 * Short Description. (use period)

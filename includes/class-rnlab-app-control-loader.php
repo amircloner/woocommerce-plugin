@@ -6,8 +6,8 @@
  * @link       https://generace.ir
  * @since      1.0.0
  *
- * @package    Rnlab_App_Control
- * @subpackage Rnlab_App_Control/includes
+ * @package    Generace_App_Control
+ * @subpackage Generace_App_Control/includes
  */
 
 /**
@@ -17,11 +17,11 @@
  * the plugin, and register them with the WordPress API. Call the
  * run function to execute the list of actions and filters.
  *
- * @package    Rnlab_App_Control
- * @subpackage Rnlab_App_Control/includes
+ * @package    Generace_App_Control
+ * @subpackage Generace_App_Control/includes
  * @author     GENERACE <ngocdt@rnlab.io>
  */
-class Rnlab_App_Control_Loader {
+class Generace_App_Control_Loader {
 
 	/**
 	 * The array of actions registered with WordPress.

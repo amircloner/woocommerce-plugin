@@ -6,8 +6,8 @@
  * @link       https://generace.ir
  * @since      1.0.0
  *
- * @package    Rnlab_App_Control
- * @subpackage Rnlab_App_Control/admin
+ * @package    Generace_App_Control
+ * @subpackage Generace_App_Control/admin
  */
 
 /**
@@ -16,11 +16,11 @@
  * Defines the plugin name, version, and two examples hooks for how to
  * enqueue the admin-specific stylesheet and JavaScript.
  *
- * @package    Rnlab_App_Control
- * @subpackage Rnlab_App_Control/admin
+ * @package    Generace_App_Control
+ * @subpackage Generace_App_Control/admin
  * @author     GENERACE <ngocdt@rnlab.io>
  */
-class Rnlab_App_Control_Admin {
+class Generace_App_Control_Admin {
 
 	/**
 	 * The ID of this plugin.
@@ -65,10 +65,10 @@ class Rnlab_App_Control_Admin {
 		 * This function is provided for demonstration purposes only.
 		 *
 		 * An instance of this class should be passed to the run() function
-		 * defined in Rnlab_App_Control_Loader as all of the hooks are defined
+		 * defined in Generace_App_Control_Loader as all of the hooks are defined
 		 * in that particular class.
 		 *
-		 * The Rnlab_App_Control_Loader will then create the relationship
+		 * The Generace_App_Control_Loader will then create the relationship
 		 * between the defined hooks and the functions defined in this
 		 * class.
 		 */

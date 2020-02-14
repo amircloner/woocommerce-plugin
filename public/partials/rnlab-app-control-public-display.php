@@ -8,8 +8,8 @@
  * @link       https://generace.ir
  * @since      1.0.0
  *
- * @package    Rnlab_App_Control
- * @subpackage Rnlab_App_Control/public/partials
+ * @package    Generace_App_Control
+ * @subpackage Generace_App_Control/public/partials
  */
 ?>
 
