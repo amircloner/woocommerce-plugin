@@ -56984,7 +56984,7 @@
         return u.a.wrap((function(r) {
             for (;;) switch (r.prev = r.next) {
                 case 0:
-                    return t = e.payload, n = ao.loading("Deleting..", 0), r.prev = 2, r.next = 5, Nk(Wm, {
+                    return t = e.payload, n = ao.loading("در حال حذف ..", 0), r.prev = 2, r.next = 5, Nk(Wm, {
                         data: {
                             where: {
                                 id: parseInt(t)
