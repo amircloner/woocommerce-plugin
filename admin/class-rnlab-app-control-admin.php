@@ -298,16 +298,16 @@ class Generace_App_Control_Admin {
 		 * Add a settings page for this plugin to the Settings menu.
 		 */
 		$hook_suffix = add_options_page(
-			__( 'Rnlab - App Control', $this->plugin_name ),
-			__( 'Rnlab - App Control', $this->plugin_name ),
+			__( 'Generace - App Control', $this->plugin_name ),
+			__( 'Generace - App Control', $this->plugin_name ),
 			'manage_options',
 			$this->plugin_name,
 			array( $this, 'display_plugin_admin_page' )
 		);
 
 		$hook_suffix = add_menu_page(
-			__( 'Rnlab - App Control', $this->plugin_name ),
-			__( 'Rnlab - App Control', $this->plugin_name ),
+			__( 'Generace - App Control', $this->plugin_name ),
+			__( 'Generace - App Control', $this->plugin_name ),
 			'manage_options',
 			$this->plugin_name,
 			array( $this, 'display_plugin_admin_page' ),
