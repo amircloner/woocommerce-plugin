@@ -18,7 +18,7 @@
  *
  * @package    Rnlab_App_Control
  * @subpackage Rnlab_App_Control/admin
- * @author     RNLAB <ngocdt@rnlab.io>
+ * @author     GENERACE <ngocdt@rnlab.io>
  */
 class Rnlab_App_Control_Admin {
 

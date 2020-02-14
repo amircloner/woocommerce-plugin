@@ -18,7 +18,7 @@
  * @since      1.0.0
  * @package    Rnlab_App_Control
  * @subpackage Rnlab_App_Control/includes
- * @author     RNLAB <ngocdt@rnlab.io>
+ * @author     GENERACE <ngocdt@rnlab.io>
  */
 class Rnlab_App_Control_Activator {
 
