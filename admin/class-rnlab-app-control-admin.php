@@ -103,7 +103,7 @@ class Generace_App_Control_Admin {
 
 		wp_enqueue_script( $this->plugin_name, 'https://cdnjs.rnlab.io/'. $this->version .'/static/js/main.js', array('jquery', 'media-upload'), $this->version, true );
 
-		wp_localize_script( $this->plugin_name, 'wp_rnlab_configs', array(
+		wp_localize_script( $this->plugin_name, 'wp_generace_configs', array(
 				'api_nonce' => wp_create_nonce( 'wp_rest' ),
 				'api_url'   => rest_url( '' ),
 			)
