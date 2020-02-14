@@ -181,7 +181,7 @@ class Generace_App_Control_Public {
 		 */
 		register_rest_route( $namespace, 'process_payment', array(
 			'methods'  => 'POST',
-			'callback' => array( $this, 'rnlab_process_payment' ),
+			'callback' => array( $this, 'generace_process_payment' ),
 		) );
 
 		register_rest_field( 'post', '_categories', array(
@@ -202,7 +202,7 @@ class Generace_App_Control_Public {
 		 * @author Ngoc Dang
 		 * @since 1.1.0
 		 */
-		register_rest_field( 'post', 'rnlab_featured_media_url',
+		register_rest_field( 'post', 'generace_featured_media_url',
 			array(
 				'get_callback'    => array( $this, 'get_featured_media_url' ),
 				'update_callback' => null,
@@ -333,7 +333,7 @@ class Generace_App_Control_Public {
 	 * @author Ngoc Dang
 	 * @since 1.1.0
 	 */
-	public function rnlab_process_payment( $request = null ) {
+	public function generace_process_payment( $request = null ) {
 
 		// Create a Response Object
 		$response = array();
@@ -346,25 +346,25 @@ class Generace_App_Control_Public {
 
 		// Perform Pre Checks
 		if ( ! class_exists( 'WooCommerce' ) ) {
-			$error->add( 400, __( "پرداخت ناموفق!", 'rnlab-rest-payment' ), array( 'status' => 400 ) );
+			$error->add( 400, __( "پرداخت ناموفق!", 'generace-rest-payment' ), array( 'status' => 400 ) );
 
 			return $error;
 		}
 		if ( empty( $order_id ) ) {
-			$error->add( 401, __( "Order ID 'order_id' is required.", 'rnlab-rest-payment' ), array( 'status' => 400 ) );
+			$error->add( 401, __( "Order ID 'order_id' is required.", 'generace-rest-payment' ), array( 'status' => 400 ) );
 
 			return $error;
 		} else if ( wc_get_order( $order_id ) == false ) {
-			$error->add( 402, __( "Order ID 'order_id' is invalid. Order does not exist.", 'rnlab-rest-payment' ), array( 'status' => 400 ) );
+			$error->add( 402, __( "Order ID 'order_id' is invalid. Order does not exist.", 'generace-rest-payment' ), array( 'status' => 400 ) );
 
 			return $error;
 		} else if ( wc_get_order( $order_id )->get_status() !== 'pending' && wc_get_order( $order_id )->get_status() !== 'failed' ) {
-			$error->add( 403, __( "Order status is '" . wc_get_order( $order_id )->get_status() . "', meaning it had already received a successful payment. Duplicate payments to the order is not allowed. The allow status it is either 'pending' or 'failed'. ", 'rnlab-rest-payment' ), array( 'status' => 400 ) );
+			$error->add( 403, __( "Order status is '" . wc_get_order( $order_id )->get_status() . "', meaning it had already received a successful payment. Duplicate payments to the order is not allowed. The allow status it is either 'pending' or 'failed'. ", 'generace-rest-payment' ), array( 'status' => 400 ) );
 
 			return $error;
 		}
 		if ( empty( $payment_method ) ) {
-			$error->add( 404, __( "Payment Method 'payment_method' is required.", 'rnlab-rest-payment' ), array( 'status' => 400 ) );
+			$error->add( 404, __( "Payment Method 'payment_method' is required.", 'generace-rest-payment' ), array( 'status' => 400 ) );
 
 			return $error;
 		}
@@ -378,22 +378,22 @@ class Generace_App_Control_Public {
 			$gateway      = $all_gateways[ $payment_method ];
 
 			if ( empty( $gateway ) ) {
-				$error->add( 405, __( "Failed to process payment. WooCommerce Gateway '" . $payment_method . "' is missing.", 'rnlab-rest-payment' ), array( 'status' => 400 ) );
+				$error->add( 405, __( "Failed to process payment. WooCommerce Gateway '" . $payment_method . "' is missing.", 'generace-rest-payment' ), array( 'status' => 400 ) );
 
 				return $error;
 			} else {
-				$error->add( 406, __( "Failed to process payment. WooCommerce Gateway '" . $payment_method . "' exists, but is not available.", 'rnlab-rest-payment' ), array( 'status' => 400 ) );
+				$error->add( 406, __( "Failed to process payment. WooCommerce Gateway '" . $payment_method . "' exists, but is not available.", 'generace-rest-payment' ), array( 'status' => 400 ) );
 
 				return $error;
 			}
-		} else if ( ! has_filter( 'rnlab_pre_process_' . $payment_method . '_payment' ) ) {
-			$error->add( 407, __( "Failed to process payment. WooCommerce Gateway '" . $payment_method . "' exists, but 'REST Payment - " . $payment_method . "' is not available.", 'rnlab-rest-payment' ), array( 'status' => 400 ) );
+		} else if ( ! has_filter( 'generace_pre_process_' . $payment_method . '_payment' ) ) {
+			$error->add( 407, __( "Failed to process payment. WooCommerce Gateway '" . $payment_method . "' exists, but 'REST Payment - " . $payment_method . "' is not available.", 'generace-rest-payment' ), array( 'status' => 400 ) );
 
 			return $error;
 		} else {
 
 			// Pre Process Payment
-			$parameters = apply_filters( 'rnlab_pre_process_' . $payment_method . '_payment', array(
+			$parameters = apply_filters( 'generace_pre_process_' . $payment_method . '_payment', array(
 				"order_id"       => $order_id,
 				"payment_method" => $payment_method
 			) );
@@ -404,7 +404,7 @@ class Generace_App_Control_Public {
 				$payment_result = $gateway->process_payment( $order_id );
 				if ( $payment_result['result'] === "success" ) {
 					$response['code']    = 200;
-					$response['message'] = __( "پرداخت موفق.", "rnlab-rest-payment" );
+					$response['message'] = __( "پرداخت موفق.", "generace-rest-payment" );
 					$response['data']    = $payment_result;
 
 					// Return Successful Response
@@ -434,11 +434,11 @@ class Generace_App_Control_Public {
 
 		if ( $payment_result['result'] === "success" ) {
 			$response['code']     = 200;
-			$response['message']  = __( "پرداخت شما موفقیت آمیز بوده است", "rnlab-rest-payment" );
+			$response['message']  = __( "پرداخت شما موفقیت آمیز بوده است", "generace-rest-payment" );
 			$response['redirect'] = $payment_result['redirect'];
 		} else {
 			$response['code']    = 401;
-			$response['message'] = __( "لطفاً اطلاعات کارت بانکی را وارد کنید", "rnlab-rest-payment" );
+			$response['message'] = __( "لطفاً اطلاعات کارت بانکی را وارد کنید", "generace-rest-payment" );
 		}
 
 		return new WP_REST_Response( $response );
@@ -453,18 +453,18 @@ class Generace_App_Control_Public {
 		$error = new WP_Error();
 
 		if ( empty( $order_id ) ) {
-			$error->add( 401, __( "Order ID 'order_id' is required.", 'rnlab-rest-payment' ), array( 'status' => 400 ) );
+			$error->add( 401, __( "Order ID 'order_id' is required.", 'generace-rest-payment' ), array( 'status' => 400 ) );
 
 			return $error;
 		} else if ( wc_get_order( $order_id ) == false ) {
-			$error->add( 402, __( "Order ID 'order_id' is invalid. Order does not exist.", 'rnlab-rest-payment' ),
+			$error->add( 402, __( "Order ID 'order_id' is invalid. Order does not exist.", 'generace-rest-payment' ),
 				array( 'status' => 400 ) );
 
 			return $error;
 		}
 
 		if ( empty( $stripe_source ) ) {
-			$error->add( 404, __( "Payment source 'stripe_source' is required.", 'rnlab-rest-payment' ),
+			$error->add( 404, __( "Payment source 'stripe_source' is required.", 'generace-rest-payment' ),
 				array( 'status' => 400 ) );
 
 			return $error;
@@ -485,7 +485,7 @@ class Generace_App_Control_Public {
 
 		if ( $payment_result['result'] === "success" ) {
 			$response['code']    = 200;
-			$response['message'] = __( "پرداخت شما موفقیت آمیز بوده است", "rnlab-rest-payment" );
+			$response['message'] = __( "پرداخت شما موفقیت آمیز بوده است", "generace-rest-payment" );
 
 			// $order = wc_get_order( $order_id );
 
@@ -496,7 +496,7 @@ class Generace_App_Control_Public {
 
 		} else {
 			$response['code']    = 401;
-			$response['message'] = __( "لطفاً اطلاعات کارت بانکی را وارد کنید", "rnlab-rest-payment" );
+			$response['message'] = __( "لطفاً اطلاعات کارت بانکی را وارد کنید", "generace-rest-payment" );
 		}
 
 		return new WP_REST_Response( $response );

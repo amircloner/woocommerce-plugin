@@ -181,7 +181,7 @@ class Generace_App_Control_Admin {
 	 */
 	public function get_template_config( $request ) {
 		global $wpdb;
-		$results = $wpdb->get_results( "SELECT * FROM {$wpdb->prefix}rnlab_template_mobile", OBJECT );
+		$results = $wpdb->get_results( "SELECT * FROM {$wpdb->prefix}generace_template_mobile", OBJECT );
 		return new WP_REST_Response( $results, 200 );
 	}
 
@@ -192,7 +192,7 @@ class Generace_App_Control_Admin {
 	 */
 	public function add_template_config( $request ) {
 		global $wpdb;
-		$table_name = $wpdb->prefix . "rnlab_template_mobile";
+		$table_name = $wpdb->prefix . "generace_template_mobile";
 
 		$data = $request->get_param( 'data' );
 
@@ -211,7 +211,7 @@ class Generace_App_Control_Admin {
 	 */
 	public function update_template_config( $request ) {
 		global $wpdb;
-		$table_name = $wpdb->prefix . "rnlab_template_mobile";
+		$table_name = $wpdb->prefix . "generace_template_mobile";
 
 		$data = $request->get_param( 'data' );
 		$where = $request->get_param( 'where' );
@@ -232,7 +232,7 @@ class Generace_App_Control_Admin {
 	 */
 	public function delete_template_config( $request ) {
 		global $wpdb;
-		$table_name = $wpdb->prefix . "rnlab_template_mobile";
+		$table_name = $wpdb->prefix . "generace_template_mobile";
 
 		$where = $request->get_param( 'where' );
 
@@ -251,7 +251,7 @@ class Generace_App_Control_Admin {
 	 */
 	public function get_configs( $request ) {
 		
-		$configs = get_option('rnlab_configs', array(
+		$configs = get_option('generace_configs', array(
 			"requireLogin" => false,
 			"toggleSidebar" => false,
 			"isBeforeNewProduct" => 5
@@ -270,10 +270,10 @@ class Generace_App_Control_Admin {
 		$data = $request->get_param( 'data' );
 		$status = false;
 
-		if ( get_option('rnlab_configs') ) {
-			$status = update_option('rnlab_configs', maybe_serialize($data));
+		if ( get_option('generace_configs') ) {
+			$status = update_option('generace_configs', maybe_serialize($data));
 		} else {
-			$status = add_option('rnlab_configs', maybe_serialize($data));
+			$status = add_option('generace_configs', maybe_serialize($data));
 		}
 
 		return new WP_REST_Response( array('status' => $status), 200 );
@@ -326,7 +326,7 @@ class Generace_App_Control_Admin {
 	 */
 	public function display_plugin_admin_page() {
 		?>
-        <div id="wp-rnlab"></div><?php
+        <div id="wp-generace"></div><?php
 	}
 
 	/**

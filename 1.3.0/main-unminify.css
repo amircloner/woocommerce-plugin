@@ -26604,7 +26604,7 @@
      font-weight: 500
  }
  
- #wp-rnlab {
+ #wp-generace {
      z-index: 99999;
      height: 100%;
      background-color: #efefef;
@@ -26615,7 +26615,7 @@
      right: 0
  }
  
- #wp-rnlab .module-item {
+ #wp-generace .module-item {
      background-color: #fff;
      margin-bottom: 15px;
      padding: 20px 25px;
@@ -26626,16 +26626,16 @@
      align-items: center
  }
  
- #wp-rnlab .module-item .anticon {
+ #wp-generace .module-item .anticon {
      font-size: 20px;
      color: #000
  }
  
- #wp-rnlab .ant-layout {
+ #wp-generace .ant-layout {
      height: 100%
  }
  
- #wp-rnlab .ant-layout-header {
+ #wp-generace .ant-layout-header {
      border-bottom: 1px solid #efefef;
      height: 60px;
      line-height: 60px;
@@ -26643,18 +26643,18 @@
      align-items: center
  }
  
- #wp-rnlab .ant-layout-header .ant-menu-horizontal {
+ #wp-generace .ant-layout-header .ant-menu-horizontal {
      border-bottom-color: transparent;
      margin: 0 0 0 auto
  }
  
- #wp-rnlab .ant-layout-content {
+ #wp-generace .ant-layout-content {
      border-left: 1px solid #efefef;
      background-color: #fff;
      padding: 20px
  }
  
- #wp-rnlab .editor-bg {
+ #wp-generace .editor-bg {
      max-width: 346px;
      height: 695px;
      margin: auto;
@@ -26664,25 +26664,25 @@
      padding: 44px 22px 39px 24px
  }
  
- #wp-rnlab .editor-bg-header {
+ #wp-generace .editor-bg-header {
      height: 40px;
      background: #fff;
      padding: 0 10px
  }
  
- #wp-rnlab .editor-bg-header__logo {
+ #wp-generace .editor-bg-header__logo {
      text-align: center
  }
  
- #wp-rnlab .editor-bg-header__logo img {
+ #wp-generace .editor-bg-header__logo img {
      margin: 0 auto
  }
  
- #wp-rnlab .editor-bg-header__cart {
+ #wp-generace .editor-bg-header__cart {
      text-align: right
  }
  
- #wp-rnlab .editor {
+ #wp-generace .editor {
      height: 610px;
      overflow-y: scroll;
      overflow-x: hidden;
@@ -26691,34 +26691,34 @@
      flex-direction: column
  }
  
- #wp-rnlab .editor [class^=scroll_container] {
+ #wp-generace .editor [class^=scroll_container] {
      display: flex;
      flex: 1 1;
      flex-direction: column
  }
  
- #wp-rnlab .editor .editor-nav img {
+ #wp-generace .editor .editor-nav img {
      width: 100%
  }
  
- #wp-rnlab .module-preview-wrap {
+ #wp-generace .module-preview-wrap {
      display: block;
      position: relative
  }
  
- #wp-rnlab .module-preview-wrap_action {
+ #wp-generace .module-preview-wrap_action {
      display: none;
      z-index: 9999
  }
  
- #wp-rnlab .module-preview-wrap.selected .module-preview-wrap_action {
+ #wp-generace .module-preview-wrap.selected .module-preview-wrap_action {
      display: block;
      position: absolute;
      top: 10px;
      left: 10px
  }
  
- #wp-rnlab .module-preview-wrap.selected:before {
+ #wp-generace .module-preview-wrap.selected:before {
      content: "";
      position: absolute;
      top: 0;
@@ -26729,7 +26729,7 @@
      z-index: 9999
  }
  
- #wp-rnlab .field {
+ #wp-generace .field {
      margin-bottom: 15px
  }
  
@@ -26852,7 +26852,7 @@
      float: left
  }
  
- .wp-rnlab-home-builder {
+ .wp-generace-home-builder {
      padding: 30px;
      height: 100%;
      overflow-y: scroll
@@ -26918,7 +26918,7 @@
      margin: 0 100px 0 0
  }
  
- .wp-rnlab-page-configs {
+ .wp-generace-page-configs {
      padding: 30px;
      height: 100%;
      overflow-y: scroll

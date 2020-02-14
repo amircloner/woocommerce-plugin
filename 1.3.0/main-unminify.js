@@ -31569,7 +31569,7 @@
     fa.Divider = io.a, fa.Item = Ko, fa.SubMenu = mo, fa.ItemGroup = io.c;
     var pa = n(24),
         da = n.n(pa),
-        ha = window.wp_rnlab_configs,
+        ha = window.wp_generace_configs,
         va = ha.api_url,
         ma = ha.api_nonce,
         ya = da.a.create({
@@ -38130,7 +38130,7 @@
                 className: "preview-blog-column-item ".concat(o && o)
             }, a.a.createElement("img", {
                 alt: "Blog",
-                src: t.rnlab_featured_media_url ? t.rnlab_featured_media_url : gp.a,
+                src: t.generace_featured_media_url ? t.generace_featured_media_url : gp.a,
                 style: i
             }), a.a.createElement("div", {
                 className: "preview-blog-column-item-right"
@@ -38187,7 +38187,7 @@
                 }
             }, a.a.createElement("img", {
                 alt: "Blog Item",
-                src: t.rnlab_featured_media_url ? t.rnlab_featured_media_url : gp.a,
+                src: t.generace_featured_media_url ? t.generace_featured_media_url : gp.a,
                 style: i
             }), a.a.createElement("div", {
                 style: {
@@ -42275,7 +42275,7 @@
                         t = this.props.data,
                         n = this.state.pending;
                     return a.a.createElement("div", {
-                        className: "wp-rnlab-home-builder"
+                        className: "wp-generace-home-builder"
                     }, a.a.createElement("div", null, a.a.createElement(Ga, {
                         loading: n,
                         type: "primary",
@@ -55475,7 +55475,7 @@
                         r = t.loading,
                         o = t.data;
                     return r ? a.a.createElement(sz, null) : a.a.createElement("div", {
-                        className: "wp-rnlab-page-configs"
+                        className: "wp-generace-page-configs"
                     }, a.a.createElement(mi, {
                         className: "mb-10"
                     }, a.a.createElement(Mi, {
@@ -55806,7 +55806,7 @@
                 key: "render",
                 value: function() {
                     return a.a.createElement("div", {
-                        className: "wp-rnlab-page-configs"
+                        className: "wp-generace-page-configs"
                     }, a.a.createElement("h3", {
                         className: "ant-typography"
                     }, " About Us"), a.a.createElement("p", null, "We create beautiful Apps with amazing User Experience"), a.a.createElement("p", null, a.a.createElement("a", {
@@ -57121,7 +57121,7 @@
     }, a.a.createElement(de, {
         initialEntries: ["/", "/home-screen", "/configs", "/about"],
         initialIndex: 0
-    }, a.a.createElement(Ez, null))), document.getElementById("wp-rnlab")), "serviceWorker" in navigator && navigator.serviceWorker.ready.then((function(e) {
+    }, a.a.createElement(Ez, null))), document.getElementById("wp-generace")), "serviceWorker" in navigator && navigator.serviceWorker.ready.then((function(e) {
         e.unregister()
     }))
 }]);

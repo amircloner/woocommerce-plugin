@@ -41,7 +41,7 @@ define( 'RNLAB_APP_CONTROL_VERSION', '1.3.0' );
  * The code that runs during plugin activation.
  * This action is documented in includes/class-generace-app-control-activator.php
  */
-function activate_rnlab_app_control() {
+function activate_generace_app_control() {
 	require_once plugin_dir_path( __FILE__ ) . 'includes/class-generace-app-control-activator.php';
 	Generace_App_Control_Activator::activate();
 }
@@ -50,13 +50,13 @@ function activate_rnlab_app_control() {
  * The code that runs during plugin deactivation.
  * This action is documented in includes/class-generace-app-control-deactivator.php
  */
-function deactivate_rnlab_app_control() {
+function deactivate_generace_app_control() {
 	require_once plugin_dir_path( __FILE__ ) . 'includes/class-generace-app-control-deactivator.php';
 	Generace_App_Control_Deactivator::deactivate();
 }
 
-register_activation_hook( __FILE__, 'activate_rnlab_app_control' );
-register_deactivation_hook( __FILE__, 'deactivate_rnlab_app_control' );
+register_activation_hook( __FILE__, 'activate_generace_app_control' );
+register_deactivation_hook( __FILE__, 'deactivate_generace_app_control' );
 
 /**
  * The core plugin class that is used to define internationalization,
@@ -73,10 +73,10 @@ require plugin_dir_path( __FILE__ ) . 'includes/class-generace-app-control.php';
  *
  * @since    1.0.0
  */
-function run_rnlab_app_control() {
+function run_generace_app_control() {
 
 	$plugin = new Generace_App_Control();
 	$plugin->run();
 
 }
-run_rnlab_app_control();
+run_generace_app_control();

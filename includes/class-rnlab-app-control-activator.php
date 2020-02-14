@@ -32,7 +32,7 @@ class Generace_App_Control_Activator {
 	public static function activate() {
 		global $wpdb;
 
-   		$table_name = $wpdb->prefix . "rnlab_template_mobile";
+   		$table_name = $wpdb->prefix . "generace_template_mobile";
    		$charset_collate = $wpdb->get_charset_collate();
 
    		$sql = "CREATE TABLE $table_name (

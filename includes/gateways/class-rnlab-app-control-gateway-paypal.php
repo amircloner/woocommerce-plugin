@@ -54,7 +54,7 @@ class Generace_App_Control_Gateway_PayPal {
 	 * @since 1.4.0
 	 * @author Ngoc Dang
 	 */
-	public function rnlab_pre_process_payment($parameters) {
+	public function generace_pre_process_payment($parameters) {
 		$parameters['pre_process_result'] = true;
 		return $parameters;
 	}

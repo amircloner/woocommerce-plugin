@@ -51,7 +51,7 @@ class Generace_App_Control_Gateway_Razorpay {
 	 * @since 1.4.0
 	 * @author Ngoc Dang
 	 */
-	public function rnlab_pre_process_payment($parameters) {
+	public function generace_pre_process_payment($parameters) {
 
 		WC()->session = new WC_Session_Handler();
 		WC()->session->init();

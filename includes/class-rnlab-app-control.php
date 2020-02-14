@@ -197,19 +197,19 @@ class Generace_App_Control {
 
 		$plugin_public = new Generace_App_Control_Public( $this->get_plugin_name(), $this->get_version() );
 
-		$rnlab_gateways = array();
+		$generace_gateways = array();
 		
 		// Payment Gateway via PayPal Standard
 		$gateway_paypal = new Generace_App_Control_Gateway_PayPal();
-		array_push($rnlab_gateways, $gateway_paypal);
+		array_push($generace_gateways, $gateway_paypal);
 
 		// Payment Gateway via Razorpay Standard
 		$gateway_razorpay = new Generace_App_Control_Gateway_Razorpay();
-		array_push($rnlab_gateways, $gateway_razorpay);
+		array_push($generace_gateways, $gateway_razorpay);
 
 		// Register Payment Endpoint for all Gateways
-		foreach ($rnlab_gateways as &$rnlab_gateway) {
-			$this->loader->add_filter('rnlab_pre_process_' . $rnlab_gateway->gateway_id . '_payment', $rnlab_gateway, 'rnlab_pre_process_payment');
+		foreach ($generace_gateways as &$generace_gateway) {
+			$this->loader->add_filter('generace_pre_process_' . $generace_gateway->gateway_id . '_payment', $generace_gateway, 'generace_pre_process_payment');
 		}
 
 		$this->loader->add_action( 'rest_api_init', $plugin_public, 'add_api_routes' );
