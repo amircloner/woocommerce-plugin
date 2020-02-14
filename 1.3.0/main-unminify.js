@@ -55812,9 +55812,9 @@
                     }, " About Us"), a.a.createElement("p", null, "We create beautiful Apps with amazing User Experience"), a.a.createElement("p", null, a.a.createElement("a", {
                         href: "https://generace.ir/"
                     }, "generace.ir"), " is a highly experienced app & web company that specializes in eCommerce and CMS related products.", a.a.createElement("br", null), "We promise best and best service to you all of our customers."), a.a.createElement("ul", null, a.a.createElement("li", null, "JS App Control ", "v1.3.0"), a.a.createElement("li", null, "GENERACE App Control ", "v1.3.0"), a.a.createElement("li", null, "RN App ", "v1.3.0"), a.a.createElement("li", null, "Send us a ticket for", " ", a.a.createElement("a", {
-                        href: "https://support.rnlab.io/",
+                        href: "https://support.generace.ir/",
                         rel: "nofollow"
-                    }, "https://support.rnlab.io/")), a.a.createElement("li", null, "Email Support: ", a.a.createElement("a", {
+                    }, "https://support.generace.ir/")), a.a.createElement("li", null, "Email Support: ", a.a.createElement("a", {
                         href: "mailto:info@generace.ir"
                     }, "info@generace.ir"))))
                 }
