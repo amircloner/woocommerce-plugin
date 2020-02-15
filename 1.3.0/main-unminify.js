@@ -55807,14 +55807,13 @@
                 value: function() {
                     return a.a.createElement("div", {
                         className: "wp-generace-page-configs"
-                    }, a.a.createElement("h3", {
+                    }, a.a.createElement("h3 dir='rtl' align='right'", {
                         className: "ant-typography"
-                    }, " About Us"), a.a.createElement("p", null, "We create beautiful Apps with amazing User Experience"), a.a.createElement("p", null, a.a.createElement("a", {
-                        href: "https://generace.ir/"
-                    }, "generace.ir"), " is a highly experienced app & web company that specializes in eCommerce and CMS related products.", a.a.createElement("br", null), "We promise best and best service to you all of our customers."), a.a.createElement("ul", null, a.a.createElement("li", null, "JS App Control ", "v1.3.0"), a.a.createElement("li", null, "GENERACE App Control ", "v1.3.0"), a.a.createElement("li", null, "RN App ", "v1.3.0"), a.a.createElement("li", null, "Send us a ticket for", " ", a.a.createElement("a", {
-                        href: "https://support.generace.ir/",
+                    }, "ارتباط باما "), a.a.createElement("p dir='rtl' align='right'", null, "در صورت هرگونه اشکال یا خطا هنگام اجرای افزونه یا اپلیکیشن مراتب رااز طریق تیکت پشتیبانی سایت ژاکت به ما گزارش دهید.
+                    }, "تیم جنریس"), "در تلاش است بهترین تجربه را از اپلیکشن ساز اندرویدی و آی او اِسی ما داشته باشید. شما می توانید انتقادات و پیشنهادات خود را  از طریق ایمیل با ما در میان بگذارید. ", a.a.createElement("br", null), "در صورت نیاز به پشتیبانی حتما 1- نسخه اپلیکیشن 2- نسخه افزونه به همراه 3- شماره سفارش را برای ما ارسال نمایید. "), a.a.createElement("ul dir='rtl' align='right'", null, a.a.createElement("li", null, "JS App Control ", "v1.3.0"), a.a.createElement("li", null, "GENERACE App Control ", "v1.3.0"), a.a.createElement("li", null, "GENERACE App ", "v1.3.0"), a.a.createElement("li", null, "فرم دریافت اطلاعات مورد نیاز اپلیکیشن :", " ", a.a.createElement("a", {-
+                        href: "https://generace.ir/",
                         rel: "nofollow"
-                    }, "https://support.generace.ir/")), a.a.createElement("li", null, "Email Support: ", a.a.createElement("a", {
+                    }, "https://support.generace.ir")), a.a.createElement("li", null, "ایمیل : ", a.a.createElement("a", {
                         href: "mailto:info@generace.ir"
                     }, "info@generace.ir"))))
                 }
