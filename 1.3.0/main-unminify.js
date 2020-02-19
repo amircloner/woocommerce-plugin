@@ -41473,7 +41473,7 @@
                 alt: "drop module"
             }), a.a.createElement("div", {
                 className: "dropmodule-note"
-            }, "Drop module here.."))
+            }, "رها کردن المان ها در اینجا .."))
         },
         qv = function(e) {
             return e.modules.present
