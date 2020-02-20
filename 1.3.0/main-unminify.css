@@ -18814,7 +18814,9 @@
  .ant-layout,
  .ant-layout * {
      -webkit-box-sizing: border-box;
-     box-sizing: border-box
+     box-sizing: border-box;
+     direction:rtl;
+     text-align:right
  }
  
  .ant-layout.ant-layout-has-sider {
@@ -26849,7 +26851,7 @@
  .ant-col-22,
  .ant-col-23,
  .ant-col-24 {
-     float: left
+     float: right
  }
  
  .wp-generace-home-builder {
