@@ -41471,7 +41471,7 @@
             }, a.a.createElement("img", {
                 src: Kv.a,
                 alt: "drop module"
-            }), a.a.createElement("div", {
+            }), a.a.createElement("div dir='rtl' align='right'", {
                 className: "dropmodule-note"
             }, "رها کردن المان ها در اینجا .."))
         },
