@@ -111,7 +111,9 @@
  input[type=password],
  input[type=text],
  textarea {
-     -webkit-appearance: none
+     -webkit-appearance: none;
+     direction:ltr;
+     text-align:left
  }
  
  dl,
@@ -238,7 +240,9 @@
  summary,
  textarea {
      -ms-touch-action: manipulation;
-     touch-action: manipulation
+     touch-action: manipulation;
+     direction:rtl;
+     text-align:right
  }
  
  table {
@@ -26681,7 +26685,7 @@
  }
  
  #wp-generace .editor-bg-header__cart {
-     text-align: right
+     text-align: left
  }
  
  #wp-generace .editor {

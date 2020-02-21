@@ -55809,7 +55809,7 @@
                         className: "wp-generace-page-configs"
                     }, a.a.createElement("h3", {
                         className: "ant-typography"
-                    }, "ارتباط باما "), a.a.createElement("p dir='rtl' align='right'", null, "در صورت هرگونه اشکال یا خطا هنگام اجرای افزونه یا اپلیکیشن مراتب رااز طریق تیکت پشتیبانی سایت ژاکت به ما گزارش دهید."
+                    }, "ارتباط باما "), a.a.createElement("p", null, "در صورت هرگونه اشکال یا خطا هنگام اجرای افزونه یا اپلیکیشن مراتب رااز طریق تیکت پشتیبانی سایت ژاکت به ما گزارش دهید."
                     ), "در تلاش است بهترین تجربه را از اپلیکشن ساز اندرویدی و آی او اِسی ما داشته باشید. شما می توانید انتقادات و پیشنهادات خود را  از طریق ایمیل با ما در میان بگذارید. ", a.a.createElement("br", null), "در صورت نیاز به پشتیبانی حتما 1- نسخه اپلیکیشن 2- نسخه افزونه به همراه 3- شماره سفارش را برای ما ارسال نمایید. "), a.a.createElement("ul", null, a.a.createElement("li", null, "JS App Control ", "v1.3.0"), a.a.createElement("li", null, "GENERACE App Control ", "v1.3.0"), a.a.createElement("li", null, "GENERACE App ", "v1.3.0"), a.a.createElement("li", null, "فرم دریافت اطلاعات مورد نیاز اپلیکیشن :", " ", a.a.createElement("a", {
                         href: "https://generace.ir/",
                         rel: "nofollow"
