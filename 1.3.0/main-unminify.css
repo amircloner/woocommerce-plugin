@@ -287,7 +287,9 @@
  [type=submit],
  button,
  html [type=button] {
-     -webkit-appearance: button
+     -webkit-appearance: button;
+     direction:ltr;
+     text-align:left
  }
  
  [type=button]::-moz-focus-inner,
@@ -26607,7 +26609,9 @@
  
  .ant-btn-lg {
      font-size: 14px;
-     font-weight: 500
+     font-weight: 500;
+     direction:ltr;
+     text-align:left
  }
  
  #wp-generace {
@@ -26759,7 +26763,9 @@
  }
  
  .footer-app {
-     padding: 30px 0 0
+     padding: 30px 0 0;
+     direction:ltr;
+     text-align:left
  }
  
  .ant-layout .ant-tabs-bar {
