@@ -241,8 +241,8 @@
  textarea {
      -ms-touch-action: manipulation;
      touch-action: manipulation;
-     direction:rtl;
-     text-align:right
+     direction:ltr;
+     text-align:left
  }
  
  table {
