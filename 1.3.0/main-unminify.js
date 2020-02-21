@@ -42019,11 +42019,11 @@
                         t = e.item,
                         n = e.removeTemplate;
                     Im({
-                        title: "Are you sure delete this template?",
-                        content: "The template will delete and can not rollback.",
-                        okText: "Yes",
+                        title: "مطمئن هستید این قالب را حذف می کنید؟",
+                        content: "قالب حذف می شود و قابل بازگردانی نیست.",
+                        okText: "باشه",
                         okType: "danger",
-                        cancelText: "No",
+                        cancelText: "نه",
                         onOk: function() {
                             n(t.get("id"))
                         },
@@ -42175,7 +42175,7 @@
                         return u.a.wrap((function(e) {
                             for (;;) switch (e.prev = e.next) {
                                 case 0:
-                                    return o = ao.loading("Duplicating..", 0), e.prev = 1, e.next = 4, Qm({
+                                    return o = ao.loading("در حال نسخه برداری ..", 0), e.prev = 1, e.next = 4, Qm({
                                         data: {
                                             data: t,
                                             name: n,
@@ -57020,7 +57020,7 @@
         return u.a.wrap((function(r) {
             for (;;) switch (r.prev = r.next) {
                 case 0:
-                    return t = e.payload, n = ao.loading("Updating..", 0), r.prev = 2, r.next = 5, Nk(Um, {
+                    return t = e.payload, n = ao.loading("در حال بروزرسانی ..", 0), r.prev = 2, r.next = 5, Nk(Um, {
                         data: LP({}, t.data, {
                             date_updated: new Date
                         }),

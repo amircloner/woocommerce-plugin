@@ -3377,7 +3377,7 @@
      font-feature-settings: "tnum", "tnum";
      position: relative;
      display: inline-block;
-     width: 100%;
+     width: 70%;
      height: 32px;
      padding: 4px 11px;
      color: rgba(0, 0, 0, .65);
@@ -27887,7 +27887,8 @@
  }
  
  .mb-15 {
-     margin-bottom: 15px
+     margin-bottom: 15px;
+     direction: ltr
  }
  
  .mb-10 {
