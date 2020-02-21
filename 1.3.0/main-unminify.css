@@ -20860,7 +20860,9 @@
      color: rgba(0, 0, 0, .85);
      font-weight: 500;
      font-size: 16px;
-     line-height: 1.4
+     line-height: 1.4;
+     direction:rtl;
+     text-align:right
  }
  
  .ant-modal-confirm-body .ant-modal-confirm-content {
@@ -20876,7 +20878,9 @@
  }
  
  .ant-modal-confirm-body>.anticon+.ant-modal-confirm-title+.ant-modal-confirm-content {
-     margin-left: 38px
+     margin-left: 38px;
+     direction:rtl;
+     text-align:right
  }
  
  .ant-modal-confirm .ant-modal-confirm-btns {

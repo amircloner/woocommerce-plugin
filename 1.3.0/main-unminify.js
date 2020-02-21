@@ -42091,7 +42091,7 @@
                         onChange: this.onUpdateName
                     }), a.a.createElement("span", {
                         className: "ant-card-savetime"
-                    }, "Last saved: ", e.get("date_updated")), a.a.createElement(mi, {
+                    }, "زمان آخرین ذخیره سازی : ", e.get("date_updated")), a.a.createElement(mi, {
                         type: "flex",
                         justify: "start",
                         className: "mt-15"
@@ -57020,7 +57020,7 @@
         return u.a.wrap((function(r) {
             for (;;) switch (r.prev = r.next) {
                 case 0:
-                    return t = e.payload, n = ao.loading("در حال بروزرسانی ..", 0), r.prev = 2, r.next = 5, Nk(Um, {
+                    return t = e.payload, n = ao.loading("در حال بروز رسانی ..", 0), r.prev = 2, r.next = 5, Nk(Um, {
                         data: LP({}, t.data, {
                             date_updated: new Date
                         }),
