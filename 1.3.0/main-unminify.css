@@ -120,7 +120,9 @@
  ol,
  ul {
      margin-top: 0;
-     margin-bottom: 1em
+     margin-bottom: 1em;
+     direction: rtl;
+     text-align: right
  }
  
  ol ol,
@@ -20571,7 +20573,9 @@
      left: 0;
      z-index: 1010;
      width: 100%;
-     pointer-events: none
+     pointer-events: none;
+     direction: rtl;
+     text-align: right
  }
  
  .ant-message-notice {
@@ -20923,7 +20927,9 @@
      z-index: 1010;
      width: 384px;
      max-width: calc(100vw - 32px);
-     margin: 0 24px 0 0
+     margin: 0 24px 0 0;
+     direction: rtl;
+     text-align: right
  }
  
  .ant-notification-bottomLeft,
@@ -26652,7 +26658,9 @@
      height: 60px;
      line-height: 60px;
      display: flex;
-     align-items: center
+     align-items: center;
+     direction: rtl;
+     text-align: right
  }
  
  #wp-generace .ant-layout-header .ant-menu-horizontal {
@@ -26911,7 +26919,9 @@
      font-size: 12px;
      margin-top: 5px;
      display: block;
-     color: #bbb
+     color: #bbb;
+     direction: rtl;
+     text-align: right
  }
  
  .dropmodule {
@@ -26939,7 +26949,9 @@
  .wp-generace-page-configs {
      padding: 30px;
      height: 100%;
-     overflow-y: scroll
+     overflow-y: scroll;
+     direction:rtl;
+     text-align:right
  }
  
  .component-input {

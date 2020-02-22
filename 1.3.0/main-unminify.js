@@ -42175,7 +42175,7 @@
                         return u.a.wrap((function(e) {
                             for (;;) switch (e.prev = e.next) {
                                 case 0:
-                                    return o = ao.loading("در حال نسخه برداری ..", 0), e.prev = 1, e.next = 4, Qm({
+                                    return o = ao.loading("  در حال نسخه برداری ..", 0), e.prev = 1, e.next = 4, Qm({
                                         data: {
                                             data: t,
                                             name: n,
@@ -55410,7 +55410,7 @@
                     return u.a.wrap((function(e) {
                         for (;;) switch (e.prev = e.next) {
                             case 0:
-                                return t = ao.loading("در حال ذخیره سازی ..", 0), e.prev = 1, r.setState({
+                                return t = ao.loading("  در حال ذخیره سازی ..", 0), e.prev = 1, r.setState({
                                     pending: !0
                                 }), n = r.state.data, e.next = 6, Ym({
                                     data: n
@@ -56938,7 +56938,7 @@
         return u.a.wrap((function(o) {
             for (;;) switch (o.prev = o.next) {
                 case 0:
-                    return e = ao.loading("در حال ذخیره سازی ..", 0), o.prev = 1, o.next = 4, Ik(Gv);
+                    return e = ao.loading("  در حال ذخیره سازی ..", 0), o.prev = 1, o.next = 4, Ik(Gv);
                 case 4:
                     return t = o.sent, o.next = 7, Ik(Zv);
                 case 7:
@@ -56983,7 +56983,7 @@
         return u.a.wrap((function(r) {
             for (;;) switch (r.prev = r.next) {
                 case 0:
-                    return t = e.payload, n = ao.loading("در حال حذف ..", 0), r.prev = 2, r.next = 5, Nk(Wm, {
+                    return t = e.payload, n = ao.loading("  در حال حذف ..", 0), r.prev = 2, r.next = 5, Nk(Wm, {
                         data: {
                             where: {
                                 id: parseInt(t)
@@ -56996,8 +56996,8 @@
                     return r.next = 9, Nk(n);
                 case 9:
                     return r.next = 11, Nk(JM.success, {
-                        message: "Notification",
-                        description: "Template delete successfully."
+                        message: "نوتیفیکیشن",
+                        description: "حذف قالب با موفقیت انجام شد."
                     });
                 case 11:
                     r.next = 19;
@@ -57020,7 +57020,7 @@
         return u.a.wrap((function(r) {
             for (;;) switch (r.prev = r.next) {
                 case 0:
-                    return t = e.payload, n = ao.loading("در حال بروز رسانی ..", 0), r.prev = 2, r.next = 5, Nk(Um, {
+                    return t = e.payload, n = ao.loading("  در حال بروز رسانی ..", 0), r.prev = 2, r.next = 5, Nk(Um, {
                         data: LP({}, t.data, {
                             date_updated: new Date
                         }),
