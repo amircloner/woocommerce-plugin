@@ -55410,7 +55410,7 @@
                     return u.a.wrap((function(e) {
                         for (;;) switch (e.prev = e.next) {
                             case 0:
-                                return t = ao.loading("Saving..", 0), e.prev = 1, r.setState({
+                                return t = ao.loading("در حال ذخیره سازی ..", 0), e.prev = 1, r.setState({
                                     pending: !0
                                 }), n = r.state.data, e.next = 6, Ym({
                                     data: n
@@ -56938,7 +56938,7 @@
         return u.a.wrap((function(o) {
             for (;;) switch (o.prev = o.next) {
                 case 0:
-                    return e = ao.loading("Saving..", 0), o.prev = 1, o.next = 4, Ik(Gv);
+                    return e = ao.loading("در حال ذخیره سازی ..", 0), o.prev = 1, o.next = 4, Ik(Gv);
                 case 4:
                     return t = o.sent, o.next = 7, Ik(Zv);
                 case 7:
