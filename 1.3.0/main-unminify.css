@@ -246,6 +246,13 @@
      direction:ltr;
      text-align:left
  }
+
+ #address-rtl {
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    direction:rtl;
+    text-align:right
+ }
  
  table {
      border-collapse: collapse

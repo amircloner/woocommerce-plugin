@@ -55448,7 +55448,7 @@
                         twitter: "https://twitter.com/",
                         phone: "0123 456 789",
                         email: "youremail@mail.com",
-                        address: "123456, your store address",
+                        address: "تهران، سعادت آباد، کوچه سی پنجم غربی، پلاک ۱، واحد ۱",
                         toggleLoginGoogle: !0,
                         toggleLoginFacebook: !0,
                         toggleLoginSMS: !0,
@@ -55641,6 +55641,7 @@
                     }, a.a.createElement(MA, {
                         name: "address",
                         value: o.address,
+                        id: "address-rtl",
                         onChange: function(t) {
                             return e.onChange({
                                 name: "address",
