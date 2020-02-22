@@ -55606,7 +55606,7 @@
                         className: "mb-10"
                     }, a.a.createElement(Mi, {
                         span: 6
-                    }, a.a.createElement("span", null, "Phone:")), a.a.createElement(Mi, {
+                    }, a.a.createElement("span", null, "شماره تماس : ")), a.a.createElement(Mi, {
                         span: 10
                     }, a.a.createElement(MA, {
                         name: "phone",
@@ -55621,7 +55621,7 @@
                         className: "mb-10"
                     }, a.a.createElement(Mi, {
                         span: 6
-                    }, a.a.createElement("span", null, "Email:")), a.a.createElement(Mi, {
+                    }, a.a.createElement("span", null, "پست الکترونیک : ")), a.a.createElement(Mi, {
                         span: 10
                     }, a.a.createElement(MA, {
                         name: "email",
@@ -55636,7 +55636,7 @@
                         className: "mb-10"
                     }, a.a.createElement(Mi, {
                         span: 6
-                    }, a.a.createElement("span", null, "Address:")), a.a.createElement(Mi, {
+                    }, a.a.createElement("span", null, "آدرس : ")), a.a.createElement(Mi, {
                         span: 10
                     }, a.a.createElement(MA, {
                         name: "address",
@@ -55651,7 +55651,7 @@
                         className: "mb-10"
                     }, a.a.createElement(Mi, {
                         span: 6
-                    }, a.a.createElement("span", null, "Login Google: ")), a.a.createElement(Mi, {
+                    }, a.a.createElement("span", null, "ورود با حساب کاربری گوگل : ")), a.a.createElement(Mi, {
                         span: 18
                     }, a.a.createElement(Pf, {
                         name: "toggleLoginGoogle",
@@ -55667,7 +55667,7 @@
                         className: "mb-10"
                     }, a.a.createElement(Mi, {
                         span: 6
-                    }, a.a.createElement("span", null, "Login Facebook: ")), a.a.createElement(Mi, {
+                    }, a.a.createElement("span", null, "ورود با حساب کاربری فیسبوک : ")), a.a.createElement(Mi, {
                         span: 18
                     }, a.a.createElement(Pf, {
                         name: "toggleLoginFacebook",
@@ -55731,7 +55731,7 @@
                         className: "mb-10"
                     }, a.a.createElement(Mi, {
                         span: 6
-                    }, a.a.createElement("span", null, "Copyright:")), a.a.createElement(Mi, {
+                    }, a.a.createElement("span", null, "متن حق کپی رایت : ")), a.a.createElement(Mi, {
                         span: 18
                     }, a.a.createElement(MA, {
                         name: "copyright",
@@ -55941,11 +55941,11 @@
                         onClick: this.onMenuClick
                     }, a.a.createElement(fa.Item, {
                         key: "/"
-                    }, "Home"), a.a.createElement(fa.Item, {
+                    }, "خانه"), a.a.createElement(fa.Item, {
                         key: "/configs"
-                    }, "Config"), a.a.createElement(fa.Item, {
+                    }, "پیکربندی اپلیکیشن"), a.a.createElement(fa.Item, {
                         key: "/about"
-                    }, "About")) : null), a.a.createElement(vz, null))
+                    }, "درباره ما")) : null), a.a.createElement(vz, null))
                 }
             }]), t
         }(o.Component),
@@ -56996,8 +56996,8 @@
                     return r.next = 9, Nk(n);
                 case 9:
                     return r.next = 11, Nk(JM.success, {
-                        message: "نوتیفیکیشن",
-                        description: "حذف قالب با موفقیت انجام شد."
+                        message: "    نوتیفیکیشن",
+                        description: "    حذف قالب با موفقیت انجام شد."
                     });
                 case 11:
                     r.next = 19;
