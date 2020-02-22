@@ -42100,7 +42100,7 @@
                     }, a.a.createElement("div", {
                         className: "mr-10 text-color btn-app ",
                         onClick: this.onEdit
-                    }, "Configure")), a.a.createElement(Mi, {
+                    }, "پیکربندی")), a.a.createElement(Mi, {
                         className: "cursor"
                     }, a.a.createElement(ep, {
                         overlay: this.renderMenu()
@@ -55546,7 +55546,7 @@
                         className: "mb-10"
                     }, a.a.createElement(Mi, {
                         span: 6
-                    }, a.a.createElement("span", null, "Facebook:")), a.a.createElement(Mi, {
+                    }, a.a.createElement("span", null, "فیسبوک : ")), a.a.createElement(Mi, {
                         span: 18
                     }, a.a.createElement(MA, {
                         name: "facebook",
@@ -55561,7 +55561,7 @@
                         className: "mb-10"
                     }, a.a.createElement(Mi, {
                         span: 6
-                    }, a.a.createElement("span", null, "Instagram:")), a.a.createElement(Mi, {
+                    }, a.a.createElement("span", null, "اینستاگرام : ")), a.a.createElement(Mi, {
                         span: 18
                     }, a.a.createElement(MA, {
                         name: "instagram",
@@ -55576,7 +55576,7 @@
                         className: "mb-10"
                     }, a.a.createElement(Mi, {
                         span: 6
-                    }, a.a.createElement("span", null, "Pinterest:")), a.a.createElement(Mi, {
+                    }, a.a.createElement("span", null, "پینترست : ")), a.a.createElement(Mi, {
                         span: 18
                     }, a.a.createElement(MA, {
                         name: "pinterest",
@@ -55591,7 +55591,7 @@
                         className: "mb-10"
                     }, a.a.createElement(Mi, {
                         span: 6
-                    }, a.a.createElement("span", null, "Twitter:")), a.a.createElement(Mi, {
+                    }, a.a.createElement("span", null, "توییتر : ")), a.a.createElement(Mi, {
                         span: 18
                     }, a.a.createElement(MA, {
                         name: "twitter",
