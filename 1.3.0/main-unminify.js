@@ -9980,9 +9980,9 @@
                         o(t, u, r), p = null
                     }
                 }, p.onabort = function() {
-                    p && (u(l("Request aborted", e, "ECONNABORTED", p)), p = null)
+                    p && (u(l("درخواست شما بی نتیجه بود. لطفا دوباره تلاش نمایید.", e, "ECONNABORTED", p)), p = null)
                 }, p.onerror = function() {
-                    u(l("Network Error", e, null, p)), p = null
+                    u(l("خطای شبکه . لطفا دوباره تلاش نمایید.", e, null, p)), p = null
                 }, p.ontimeout = function() {
                     u(l("timeout of " + e.timeout + "ms exceeded", e, "ECONNABORTED", p)), p = null
                 }, r.isStandardBrowserEnv()) {
@@ -41993,9 +41993,9 @@
                         onClick: r.onMenuClick
                     }, a.a.createElement(fa.Item, {
                         key: "delete"
-                    }, "Delete"), a.a.createElement(fa.Item, {
+                    }, "حذف"), a.a.createElement(fa.Item, {
                         key: "duplicate"
-                    }, "Duplicate"))
+                    }, "نسخه برداری"))
                 }, r.state = {
                     disabled: !1
                 }, r.onEdit = r.onEdit.bind(g(r)), r.onDelete = r.onDelete.bind(g(r)), r.onMenuClick = r.onMenuClick.bind(g(r)), r.onUpdateName = r.onUpdateName.bind(g(r)), r.onUpdateStatus = r.onUpdateStatus.bind(g(r)), r.onDuplicate = r.onDuplicate.bind(g(r)), r
@@ -42106,7 +42106,7 @@
                         overlay: this.renderMenu()
                     }, a.a.createElement("div", {
                         className: "btn-app text-color"
-                    }, "Actions ", a.a.createElement(Cr, {
+                    }, "اقدامات ", a.a.createElement(Cr, {
                         type: "down"
                     }))))), a.a.createElement("div", {
                         className: "list-preview mt-30 mb-15"
@@ -55512,7 +55512,7 @@
                         className: "mb-10"
                     }, a.a.createElement(Mi, {
                         span: 6
-                    }, a.a.createElement("span", null, "New Product (days):")), a.a.createElement(Mi, {
+                    }, a.a.createElement("span", null, "محصول جدید (روزها) : ")), a.a.createElement(Mi, {
                         span: 18
                     }, a.a.createElement(iC, {
                         name: "isBeforeNewProduct",
@@ -55716,7 +55716,7 @@
                         className: "mb-10"
                     }, a.a.createElement(Mi, {
                         span: 6
-                    }, a.a.createElement("span", null, "Wishlist: ")), a.a.createElement(Mi, {
+                    }, a.a.createElement("span", null, "لیست علاقه مندی ها : ")), a.a.createElement(Mi, {
                         span: 18
                     }, a.a.createElement(Pf, {
                         name: "toggleWishlist",
@@ -55763,7 +55763,7 @@
                         className: "mb-10"
                     }, a.a.createElement(Mi, {
                         span: 6
-                    }, a.a.createElement("span", null, "Rating Product: ")), a.a.createElement(Mi, {
+                    }, a.a.createElement("span", null, "رتبه بندی محصول : ")), a.a.createElement(Mi, {
                         span: 18
                     }, a.a.createElement(Pf, {
                         name: "toggleRatingProduct",

@@ -7152,7 +7152,9 @@
      white-space: nowrap;
      cursor: pointer;
      -webkit-transition: all .3s;
-     transition: all .3s
+     transition: all .3s;
+     direction: rtl;
+     text-align: right
  }
  
  .ant-dropdown-menu-item>.anticon:first-child,
@@ -9098,7 +9100,8 @@
  
  .ant-row-flex-start {
      -ms-flex-pack: start;
-     justify-content: flex-start
+     justify-content: flex-start;
+     direction: rtl
  }
  
  .ant-row-flex-center {
@@ -26880,7 +26883,7 @@
  .ant-col-22,
  .ant-col-23,
  .ant-col-24 {
-     float: right
+     float: left
  }
  
  .wp-generace-home-builder {
@@ -26957,8 +26960,6 @@
      padding: 30px;
      height: 100%;
      overflow-y: scroll;
-     direction:rtl;
-     text-align:right
  }
  
  .component-input {
@@ -27885,7 +27886,7 @@
  
  .mr-10 {
      margin-right: 10px;
-     margin-left: auto
+     margin-left: 10px
  }
  
  .mr-5 {
