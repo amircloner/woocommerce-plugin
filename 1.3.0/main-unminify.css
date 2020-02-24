@@ -89,7 +89,9 @@
  
  p {
      margin-top: 0;
-     margin-bottom: 1em
+     margin-bottom: 1em;
+     direction: rtl;
+     text-align: right
  }
  
  abbr[data-original-title],
@@ -297,8 +299,8 @@
  button,
  html [type=button] {
      -webkit-appearance: button;
-     direction:ltr;
-     text-align:left
+     direction: ltr;
+     text-align: center
  }
  
  [type=button]::-moz-focus-inner,
@@ -25812,7 +25814,9 @@
      color: rgba(0, 0, 0, .85);
      font-weight: 600;
      font-size: 24px;
-     line-height: 1.35
+     line-height: 1.35;
+     direction: rtl;
+     text-align: right
  }
  
  .ant-typography h4,
@@ -26948,8 +26952,8 @@
      text-align: center;
      font-size: 20px;
      color: #2094ff;
-     direction:rtl;
-     text-align:right
+     direction: rtl;
+     text-align: center
  }
  
  .scroll_content__dfsgC>div {
@@ -27029,7 +27033,9 @@
      padding: 21px 18px;
      color: #777;
      font-size: 15px;
-     line-height: 18px
+     line-height: 18px;
+     direction: rtl;
+     text-align: right
  }
  
  .list-settings .active {
@@ -27081,7 +27087,7 @@
  
  .component-input .ant-col>span {
      color: #afafaf;
-     font-size: 12px
+     font-size: 14px
  }
  
  .ant-radio-group {

@@ -40306,16 +40306,16 @@
     var Rv = "card",
         Fv = [{
             type: "slideshow",
-            name: "Slideshow",
+            name: " نمایش اسلایدی",
             icon: "play-square",
             layout: {
                 value: "basic",
                 options: [{
                     key: "basic",
-                    name: "Basic"
+                    name: "اصلی"
                 }, {
                     key: "creative",
-                    name: "Creative"
+                    name: "خلاق"
                 }]
             },
             fields: [{
@@ -40352,12 +40352,12 @@
                 key: "width",
                 field: "input",
                 value: 375,
-                name: "Width"
+                name: "پهنا"
             }, {
                 key: "height",
                 field: "input",
                 value: 390,
-                name: "Height"
+                name: "ارتفاع"
             }, {
                 key: "images",
                 field: "items",
@@ -40375,7 +40375,7 @@
                     field: "text"
                 }, {
                     fieldKey: "title",
-                    name: "Title",
+                    name: "عنوان",
                     field: "text"
                 }, {
                     fieldKey: "btn_name",
@@ -40479,7 +40479,7 @@
             }]
         }, {
             type: "categories",
-            name: "Categories",
+            name: "دسته بندی ها",
             icon: "folder-open",
             layout: {
                 value: "carousel",
@@ -40488,7 +40488,7 @@
                     name: "Carousel"
                 }, {
                     key: "grid",
-                    name: "Grid"
+                    name: "شبکه ای"
                 }]
             },
             fields: [{
@@ -40523,24 +40523,24 @@
                 key: "width",
                 field: "input",
                 value: 109,
-                name: "Width"
+                name: "پهنا"
             }, {
                 key: "height",
                 field: "input",
                 value: 109,
-                name: "Height"
+                name: "ارتفاع"
             }, {
                 key: "round_image",
                 field: "switch",
                 value: !1,
                 defaultValue: !1,
-                name: "Round image"
+                name: "تصویر گرد"
             }, {
                 key: "disable_text",
                 field: "switch",
                 value: !0,
                 defaultValue: !0,
-                name: "Disable Name"
+                name: "غیرفعال کردن نام"
             }, {
                 key: "border",
                 field: "switch",
@@ -40571,25 +40571,25 @@
             }]
         }, {
             type: "products",
-            name: "Products List",
+            name: "لیست محصولات",
             icon: "appstore",
             layout: {
                 value: "onecolumn",
                 options: [{
                     key: "onecolumn",
-                    name: "1 Column"
+                    name: "1 ستونه"
                 }, {
                     key: "twocolumns",
-                    name: "2 Columns"
+                    name: "2 ستونه"
                 }, {
                     key: "threecolumns",
-                    name: "3 Columns"
+                    name: "3 ستونه"
                 }, {
                     key: "grid",
-                    name: "Grid"
+                    name: "شبکه ای"
                 }, {
                     key: "list",
-                    name: "List"
+                    name: "نرده ای"
                 }]
             },
             fields: [{
@@ -40633,12 +40633,12 @@
                 key: "width",
                 field: "input",
                 value: 204,
-                name: "Width"
+                name: "پهنا"
             }, {
                 key: "height",
                 field: "input",
                 value: 257,
-                name: "Height"
+                name: "ارتفاع"
             }],
             spacing: [{
                 key: "padding",
@@ -40663,25 +40663,25 @@
             }]
         }, {
             type: "productcategory",
-            name: "Product Category",
+            name: "دسته بندی محصولات",
             icon: "qrcode",
             layout: {
                 value: "onecolumn",
                 options: [{
                     key: "onecolumn",
-                    name: "1 Column"
+                    name: "1 ستونه"
                 }, {
                     key: "twocolumns",
-                    name: "2 Columns"
+                    name: "2 ستونه"
                 }, {
                     key: "threecolumns",
-                    name: "3 Columns"
+                    name: "3 ستونه"
                 }, {
                     key: "grid",
-                    name: "Grid"
+                    name: "شبکه ای"
                 }, {
                     key: "list",
-                    name: "List"
+                    name: "نرده ای"
                 }]
             },
             fields: [{
@@ -40726,7 +40726,7 @@
                 key: "height",
                 field: "input",
                 value: 257,
-                name: "Height"
+                name: "ارتفاع"
             }],
             spacing: [{
                 key: "padding",
@@ -40751,7 +40751,7 @@
             }]
         }, {
             type: "banners",
-            name: "Banners",
+            name: "آگهی ها",
             icon: "file-image",
             layout: {
                 value: "one",
@@ -40804,12 +40804,12 @@
                 key: "width",
                 field: "input",
                 value: 375,
-                name: "Width"
+                name: "پهنا"
             }, {
                 key: "height",
                 field: "input",
                 value: 390,
-                name: "Height"
+                name: "ارتفاع"
             }, {
                 key: "radius",
                 field: "input",
@@ -40853,14 +40853,14 @@
             }]
         }, {
             type: "text",
-            name: "Text",
+            name: "متن",
             icon: "file-text",
             fields: [{
                 key: "bg_color",
                 field: "color",
                 value: "#f2f2f2",
                 defaultValue: "#f2f2f2",
-                name: "Background Color"
+                name: "رنگ پس زمینه"
             }, {
                 key: "title",
                 field: "text",
@@ -40870,7 +40870,7 @@
                     },
                     style: {}
                 },
-                name: "Title"
+                name: "عنوان"
             }],
             spacing: [{
                 key: "padding",
@@ -40948,12 +40948,12 @@
                 key: "width",
                 field: "input",
                 value: 137,
-                name: "Width"
+                name: "ارتفاع"
             }, {
                 key: "height",
                 field: "input",
                 value: 123,
-                name: "Height"
+                name: "ارتفاع"
             }],
             spacing: [{
                 key: "padding",
@@ -40978,7 +40978,7 @@
             }]
         }, {
             type: "countdown",
-            name: "Count Down",
+            name: "شمارش معکوس",
             icon: "clock-circle",
             fields: [{
                 key: "boxed",
@@ -41004,7 +41004,7 @@
                         color: "#121212"
                     }
                 },
-                name: "Title"
+                name: "عنوان"
             }, {
                 key: "expire",
                 field: "datetime",
@@ -41034,16 +41034,16 @@
             }]
         }, {
             type: "testimonials",
-            name: "Testimonials",
+            name: "دیدگاه مشتریان",
             icon: "form",
             layout: {
                 value: "style1",
                 options: [{
                     key: "style1",
-                    name: "Style 1"
+                    name: "استایل 1"
                 }, {
                     key: "style2",
-                    name: "Style 2"
+                    name: "استایل 2"
                 }]
             },
             fields: [{
@@ -41071,7 +41071,7 @@
                     field: "image"
                 }, {
                     fieldKey: "title",
-                    name: "Title",
+                    name: "عنوان",
                     field: "text"
                 }, {
                     fieldKey: "description",
@@ -41117,7 +41117,7 @@
             }]
         }, {
             type: "button",
-            name: "Button",
+            name: "دکمه",
             icon: "select",
             layout: {},
             fields: [{
@@ -41131,13 +41131,13 @@
                 field: "color",
                 value: "#121212",
                 defaultValue: "#121212",
-                name: "Border Color"
+                name: "رنگ قاب"
             }, {
                 key: "bg_color",
                 field: "color",
                 value: "#121212",
                 defaultValue: "#121212",
-                name: "Background Color"
+                name: "رنگ پس زمینه"
             }, {
                 key: "title",
                 field: "text",
@@ -41184,7 +41184,7 @@
             }]
         }, {
             type: "vendors",
-            name: "Vendors",
+            name: "فروشندگان",
             icon: "tablet",
             layout: {},
             fields: [{
@@ -41239,7 +41239,7 @@
             }]
         }, {
             type: "search",
-            name: "Search",
+            name: "جستجو",
             icon: "search",
             fields: [{
                 key: "boxed",
@@ -41284,7 +41284,7 @@
             }]
         }, {
             type: "divider",
-            name: "Divider",
+            name: "جدا کننده",
             icon: "line",
             layout: {},
             fields: [{
@@ -41793,7 +41793,7 @@
         Vm = n.n(Hm),
         Dm = [{
             type: "app_config",
-            name: "App config",
+            name: "پیکربندی برنامه",
             fields: [{
                 key: "logo",
                 field: "image",
@@ -41832,36 +41832,36 @@
             }]
         }, {
             type: "colors",
-            name: "Colors",
+            name: "رنگ ها",
             fields: [{
                 key: "primary",
                 field: "color",
                 value: "#121212",
-                name: "Primary Color"
+                name: "رنگ اصلی"
             }, {
                 key: "secondary",
                 field: "color",
                 value: "#777777",
-                name: "Secondary Color"
+                name: "رنگ ثانویه"
             }, {
                 key: "bgColor",
                 field: "color",
                 value: "#ffffff",
-                name: "Background Color"
+                name: "رنگ پس زمینه"
             }, {
                 key: "bgColorSecondary",
                 field: "color",
                 value: "#f4f4f4",
-                name: "Background Secondary Color"
+                name: "رنگ ثانویه پس زمینه"
             }]
         }, {
             type: "popup",
-            name: "Popup",
+            name: "پاپ آپ",
             fields: [{
                 key: "enable",
                 field: "switch",
                 value: !1,
-                name: "Enable popup"
+                name: "فعالسازی پاپ آپ"
             }, {
                 key: "heading",
                 field: "text",
@@ -41883,7 +41883,7 @@
                     style: {}
                 },
                 defaultValue: {},
-                name: "Title"
+                name: "عنوان"
             }, {
                 key: "description",
                 field: "text",
@@ -41894,7 +41894,7 @@
                     style: {}
                 },
                 defaultValue: {},
-                name: "Description"
+                name: "توضیح"
             }, {
                 key: "text_button",
                 field: "text",
@@ -54767,17 +54767,17 @@
                     return e ? a.a.createElement(Vg, {
                         defaultActiveKey: "1"
                     }, a.a.createElement(OM, {
-                        tab: "General",
+                        tab: "عمومی",
                         key: "1"
                     }, a.a.createElement(dp, {
                         style: xM
                     }, e.get("fields").map(this.renderGeneral))), a.a.createElement(OM, {
-                        tab: "Spacing",
+                        tab: "فاصله بندی",
                         key: "2"
                     }, a.a.createElement(dp, {
                         style: xM
                     }, e.get("spacing").map(this.renderSpacing))), e.get("layout") && a.a.createElement(OM, {
-                        tab: "Layout",
+                        tab: "چیدمان",
                         key: "3"
                     }, a.a.createElement(dp, {
                         style: xM
@@ -54966,12 +54966,12 @@
                         onChange: this.onChange,
                         defaultActiveKey: "components"
                     }, a.a.createElement(jM, {
-                        tab: "Components",
+                        tab: "افزودنی ها",
                         key: "components"
                     }, a.a.createElement(dp, {
                         style: LM
                     }, a.a.createElement(TM, null))), a.a.createElement(jM, {
-                        tab: "Settings",
+                        tab: "تنظیمات",
                         key: "settings"
                     }, a.a.createElement(dp, {
                         style: LM
@@ -55810,13 +55810,14 @@
                         className: "wp-generace-page-configs"
                     }, a.a.createElement("h3", {
                         className: "ant-typography"
-                    }, "ارتباط باما "), a.a.createElement("p", null, "در صورت هرگونه اشکال یا خطا هنگام اجرای افزونه یا اپلیکیشن مراتب رااز طریق تیکت پشتیبانی سایت ژاکت به ما گزارش دهید."
-                    ), "در تلاش است بهترین تجربه را از اپلیکشن ساز اندرویدی و آی او اِسی ما داشته باشید. شما می توانید انتقادات و پیشنهادات خود را  از طریق ایمیل با ما در میان بگذارید. ", a.a.createElement("br", null), "در صورت نیاز به پشتیبانی حتما 1- نسخه اپلیکیشن 2- نسخه افزونه به همراه 3- شماره سفارش را برای ما ارسال نمایید. "), a.a.createElement("ul", null, a.a.createElement("li", null, "JS App Control ", "v1.3.0"), a.a.createElement("li", null, "GENERACE App Control ", "v1.3.0"), a.a.createElement("li", null, "GENERACE App ", "v1.3.0"), a.a.createElement("li", null, "فرم دریافت اطلاعات مورد نیاز اپلیکیشن :", " ", a.a.createElement("a", {
-                        href: "https://generace.ir/",
+                    }, "تماس با ما "), a.a.createElement("p", null, "در صورت هرگونه اشکال یا خطا هنگام اجرای افزونه یا اپلیکیشن مراتب رااز طریق تیکت پشتیبانی سایت ژاکت به ما گزارش دهید."), a.a.createElement("p", null, a.a.createElement("a", {
+                        href: "https://generace.ir/"
+                    }, "تیم جنریس"), "در تلاش است بهترین تجربه را از اپلیکشن ساز اندرویدی و آی او اِسی ما داشته باشید. شما می توانید انتقادات و پیشنهادات خود را  از طریق ایمیل با ما در میان بگذارید. ", a.a.createElement("br", null), "در صورت نیاز به پشتیبانی حتما 1- نسخه اپلیکیشن 2- نسخه افزونه به همراه 3- شماره سفارش را برای ما ارسال نمایید. "), a.a.createElement("ul", null, a.a.createElement("li", null, "JS App Control ", "v1.3.0"), a.a.createElement("li", null, "GENERACE App Control ", "v1.3.0"), a.a.createElement("li", null, "GENERACE App ", "v1.3.0"), a.a.createElement("li", null, "فرم دریافت اطلاعات مورد نیاز اپلیکیشن :", " ", a.a.createElement("a", {
+                        href: "https://support.generace.ir",
                         rel: "nofollow"
                     }, "https://support.generace.ir")), a.a.createElement("li", null, "ایمیل : ", a.a.createElement("a", {
                         href: "mailto:info@generace.ir"
-                    }, "info@generace.ir")))
+                    }, "info@generace.ir"))))
                 }
             }]), t
         }(o.Component);
@@ -56960,8 +56961,8 @@
                     return o.next = 17, Nk(e);
                 case 17:
                     return o.next = 19, Nk(JM.success, {
-                        message: "Notification",
-                        description: "Template save successfully."
+                        message: "نوتیفیکیشن",
+                        description: "ذخیره قالب با موفقیت انجام شد."
                     });
                 case 19:
                     o.next = 27;
