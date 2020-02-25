@@ -73,7 +73,11 @@ class Generace_App_Control_Admin {
 		 * class.
 		 */
 
-		wp_enqueue_style( $this->plugin_name, 'https://cdnjs.rnlab.io/'. $this->version .'/static/css/main.css', array(), $this->version,
+		$file_url = plugins_url(
+			$this->version .'/main.css', // File name
+			__FILE__ // Magic PHP constant that means the "current file"
+		);
+		wp_enqueue_style( $this->plugin_name, $file_url, array(), $this->version,
 			'all' );
 
 	}
@@ -101,7 +105,12 @@ class Generace_App_Control_Admin {
 
 		wp_enqueue_media();
 
-		wp_enqueue_script( $this->plugin_name, 'https://cdnjs.rnlab.io/'. $this->version .'/static/js/main.js', array('jquery', 'media-upload'), $this->version, true );
+		$file_url = plugins_url(
+			$this->version .'/main.js', // File name
+			__FILE__ // Magic PHP constant that means the "current file"
+		);
+
+		wp_enqueue_script( $this->plugin_name, $file_url, array('jquery', 'media-upload'), $this->version, true );
 
 		wp_localize_script( $this->plugin_name, 'wp_generace_configs', array(
 				'api_nonce' => wp_create_nonce( 'wp_rest' ),
